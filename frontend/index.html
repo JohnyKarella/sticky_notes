@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="en" data-currency="&#8377;" data-locale="en-IN" data-api="/api">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notera | Sticky notes for small notes and big ideas</title>
+  <meta name="description"
+    content="Shop premium sticky notes: pastel, transparent, grid, planner and neon pads on FSC-certified paper. Free shipping over Rs 499.">
+  <meta name="theme-color" content="#ffe46b">
+  <link rel="icon" href="images/icons/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body data-brand="Notera" data-free-shipping-over="499" data-shipping-fee="49" data-free-label="Free"
+  data-order-prefix="PL-">
+  <!-- Page transition cover -->
+  <div class="veil" aria-hidden="true"><img src="images/logo/notera-logo.png" alt="" width="184" height="60"></div>
+  <div class="progress" aria-hidden="true"></div>
+  <!-- A few floating background objects at the page sides (decoration only) -->
+  <div class="bg-notes" aria-hidden="true"><span class="bgn bgn--l"></span><span class="bgn bgn--r"></span><span
+      class="bgn bgn--dot bgn--l"></span><span class="bgn bgn--r"></span><span class="bgn bgn--ring bgn--l"></span><span
+      class="bgn bgn--r"></span><span class="bgn bgn--dot bgn--r"></span><span class="bgn bgn--l"></span></div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <!-- Announcement bar: each <p> is one rotating message -->
+    <div class="announce" role="region" aria-label="Announcements">
+      <p class="is-on">Free delivery on orders over &#8377;499</p>
+      <p>Use code STICKY10 for 10% off your first pads</p>
+      <p>Orders ship within 1 working day, all over India</p>
+    </div>
+    <div class="header__bar">
+      <a class="logo" href="index.html" aria-label="Notera home"><img src="images/logo/notera-logo.png" alt="Notera"
+          width="92" height="30"></a>
+      <nav class="nav" aria-label="Main">
+        <a class="nav__link" href="shop.html">Shop</a>
+        <!-- Categories dropdown -->
+        <div class="nav__item">
+          <button class="nav__link" type="button" aria-expanded="false" aria-controls="mega">Categories <svg
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6" />
+            </svg></button>
+          <div class="mega" id="mega">
+            <div>
+              <h3>Collections</h3>
+              <div class="mega__cols">
+                <a class="mega__thumb" href="shop.html?collection=Pastel"><img src="images/categories/pastel.jpg" alt=""
+                    width="104" height="104" loading="lazy">Pastel</a>
+                <a class="mega__thumb" href="shop.html?collection=Study"><img src="images/categories/study.jpg" alt=""
+                    width="104" height="104" loading="lazy">Study</a>
+                <a class="mega__thumb" href="shop.html?collection=Office"><img src="images/categories/office.jpg" alt=""
+                    width="104" height="104" loading="lazy">Office</a>
+                <a class="mega__thumb" href="shop.html?collection=Planner"><img src="images/categories/planner.jpg"
+                    alt="" width="104" height="104" loading="lazy">Planner</a>
+                <a class="mega__thumb" href="shop.html?collection=Transparent"><img
+                    src="images/categories/transparent.jpg" alt="" width="104" height="104"
+                    loading="lazy">Transparent</a>
+                <a class="mega__thumb" href="shop.html?collection=Color%20Pop"><img
+                    src="images/categories/color-pop.jpg" alt="" width="104" height="104" loading="lazy">Color Pop</a>
+              </div>
+            </div>
+            <div>
+              <h3>By type</h3>
+              <ul>
+                <li><a class="mega__link" href="shop.html?q=classic">Classic squares</a></li>
+                <li><a class="mega__link" href="shop.html?q=pastel">Pastel notes</a></li>
+                <li><a class="mega__link" href="shop.html?q=neon">Neon notes</a></li>
+                <li><a class="mega__link" href="shop.html?q=clear">Transparent notes</a></li>
+                <li><a class="mega__link" href="shop.html?q=grid">Grid notes</a></li>
+                <li><a class="mega__link" href="shop.html?q=lined">Lined notes</a></li>
+                <li><a class="mega__link" href="shop.html?q=to-do">To-do pads</a></li>
+                <li><a class="mega__link" href="shop.html?shape=Flag">Page flags</a></li>
+                <li><a class="mega__link" href="shop.html?shape=Shaped">Shaped notes</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>By size</h3>
+              <ul>
+                <li><a class="mega__link" href="shop.html?size=Mini">Mini, 51 x 38 mm</a></li>
+                <li><a class="mega__link" href="shop.html?size=Standard">Standard, 76 x 76 mm</a></li>
+                <li><a class="mega__link" href="shop.html?size=Large">Large, 101 x 101 mm</a></li>
+              </ul>
+              <h3 data-gap>By budget</h3>
+              <ul>
+                <li><a class="mega__link" href="shop.html?max=150">Under &#8377;150</a></li>
+                <li><a class="mega__link" href="shop.html?max=200">Under &#8377;200</a></li>
+                <li><a class="mega__link" href="shop.html?max=300">Under &#8377;300</a></li>
+              </ul>
+            </div>
+            <a class="mega__feature tint-yellow" href="product.html?id=p17">
+              <img src="images/products/sticky-note-swatches-earl-grey-ibiza-angora-01.jpg" alt="Sticky Note Swatches &ndash; Earl Grey, Ibiza &amp; Angora"
+                width="600" height="600" loading="lazy">
+              <span>Sticky Note Swatches<small>Earl Grey, Ibiza &amp; Angora, &#8377;349</small></span>
+            </a>
+          </div>
+        </div>
+        <a class="nav__link" href="journal.html">Journal</a>
+        <a class="nav__link" href="index.html#about">About</a>
+      </nav>
+      <div class="header__tools">
+        <button class="icon-btn" type="button" data-open="search-panel" aria-label="Search"><svg viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+            aria-hidden="true">
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.5-3.5" />
+          </svg></button>
+        <a class="icon-btn hide-xs" href="account.html" aria-label="Account"><svg viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="8" r="4" />
+            <path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" />
+          </svg></a>
+        <button class="icon-btn" type="button" data-open="wishlist-drawer" aria-label="Open wishlist"><svg
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+          </svg><span class="count" data-wish-count hidden>0</span></button>
+        <button class="icon-btn" type="button" data-open="cart-drawer" aria-label="Open cart"><svg viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+            aria-hidden="true">
+            <path d="M5 8h14l-1 12H6L5 8Z" />
+            <path d="M9 8V7a3 3 0 0 1 6 0v1" />
+          </svg><span class="count" data-cart-count hidden>0</span></button>
+        <button class="icon-btn menu-btn" type="button" data-open="mobile-menu" aria-label="Open menu"><svg
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 8h16M4 16h16" />
+          </svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero hero--fx" data-hero>
+      <!-- Hero background (decoration only): colour glow, a drifting grid, and small notes that float upward.
+           Each <span> is one floating note; delete some for a calmer background. -->
+      <div class="fx-bg" aria-hidden="true">
+        <i></i><i></i><i></i>
+        <b class="fx-grid-lines"></b>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="wrap fx-layout">
+        <!-- LEFT: text -->
+        <div class="fx-copy">
+          <a class="hero__chip fx-pill" href="shop.html?collection=Transparent" data-reveal="pop"><b>New</b> Clear notes
+            you can write on <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 12h15m-6-6 6 6-6 6" />
+            </svg></a>
+
+          <!-- Headline: letters rise one by one; the small picture and the last word are part of the line -->
+          <h1 class="display fx-title" data-split="chars">
+            <span class="fx-line">Small <span class="fx-media" data-nosplit aria-hidden="true"><img
+                  src="images/products/sticky-note-swatches-earl-grey-ibiza-angora-01.jpg" alt="" width="300" height="300"></span>
+              notes.</span>
+            <span class="fx-line">Big <span class="swap" data-swap data-nosplit><span class="is-on">ideas.</span><span
+                  aria-hidden="true">plans.</span><span aria-hidden="true">lists.</span><span
+                  aria-hidden="true">dreams.</span></span></span>
+          </h1>
+
+          <p class="lede" data-reveal="blur" data-d="3">Sticky notes designed to organize thoughts, brighten desks and
+            make everyday ideas easier to remember.</p>
+
+          <div class="hero__cta" data-reveal data-d="4">
+            <a class="btn fx-btn" href="shop.html">Shop sticky notes <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg></a>
+            <a class="btn btn--ghost" href="#specialities">Explore collections</a>
+          </div>
+
+          <ul class="fx-points" data-reveal data-d="5">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="m5 12.5 4.5 4.5L19 7.5" />
+              </svg> Free delivery over &#8377;499</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="m5 12.5 4.5 4.5L19 7.5" />
+              </svg> 14-day returns</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="m5 12.5 4.5 4.5L19 7.5" />
+              </svg> FSC-certified paper</li>
+          </ul>
+
+        </div>
+
+        <!-- RIGHT: the picture with floating cards around it -->
+        <div class="fx-stage" data-scroll-tilt>
+          <div class="fx-halo" aria-hidden="true"></div>
+          <div class="fx-screen tint-yellow">
+
+            <!-- <img src="images/banners/hero-sticky-notes.jpg"
+              alt="Stacks and a ring of colourful sticky notes on a yellow surface" width="1400" height="1400"
+              fetchpriority="high"> -->
+
+            <video autoplay muted loop playsinline width="1400" height="1400"
+              poster="images/banners/hero-sticky-notes.jpg">
+              <source src="images/banners/hero_banner.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
+          </div>
+
+          <!-- Floating product card (the + button really adds to the cart) -->
+          <article class="fx-float fx-card fx-card--product" data-depth="-0.10" data-product data-id="p01"
+            data-name="Transparent Sticky Notes &ndash; Cotton" data-price="199" data-image="images/products/transparent-sticky-notes-cotton-01.jpg"
+            data-href="product.html?id=p01" data-colors="Pink,Lavender,Mint" data-sizes="Standard" data-stock="in">
+            <a class="fx-card__img tint-pink" href="product.html?id=p01" tabindex="-1" aria-hidden="true"><img
+                src="images/products/transparent-sticky-notes-cotton-01.jpg" alt="" width="400" height="400"></a>
+            <div class="fx-card__body">
+              <p class="fx-card__cat">Bestseller</p>
+              <p class="fx-card__name"><a href="product.html?id=p01">Transparent Sticky Notes &ndash; Cotton</a></p>
+              <p class="price">&#8377;199 <s><span class="sr-only">Was </span>&#8377;249</s></p>
+            </div>
+            <button class="fx-card__add" type="button" data-add
+              aria-label="Add Transparent Sticky Notes &ndash; Cotton to cart">+</button>
+          </article>
+
+          <a class="fx-float fx-card fx-card--swatch" href="product.html?id=p17" data-depth="-0.16">
+            <span class="fx-dots" aria-hidden="true"><i class="c-yellow"></i><i class="c-pink"></i><i
+                class="c-lavender"></i><i class="c-mint"></i><i class="c-blue"></i><i class="c-peach"></i></span>
+            <span><b>Sticky Note Swatches</b><small>3 soft shades</small></span>
+          </a>
+
+          <p class="fx-float fx-chip fx-chip--ship" data-depth="-0.07"><svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+              aria-hidden="true">
+              <path d="M3 6h11v10H3zM14 10h4l3 3v3h-7z" />
+              <circle cx="7" cy="18" r="1.6" />
+              <circle cx="17" cy="18" r="1.6" />
+            </svg> Ships in 1 working day</p>
+          <p class="fx-float fx-chip fx-chip--clean" data-depth="-0.13"><svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+              aria-hidden="true">
+              <path d="m5 12.5 4.5 4.5L19 7.5" />
+            </svg> peels off clean</p>
+
+          <div class="fx-float note note--pink fx-note" data-depth="-0.19" aria-hidden="true"><span class="hand">ship it
+              Friday!</span></div>
+          <div class="fx-float note fx-note fx-note--2" data-depth="-0.09" aria-hidden="true"><span class="hand">call
+              Amma at 6</span></div>
+
+          <a class="fx-float spin spin--fx" href="shop.html" aria-label="Free shipping over 499 rupees. Shop now"
+            data-depth="-0.12">
+            <svg class="spin__ring" viewBox="0 0 120 120" aria-hidden="true">
+              <defs>
+                <path id="ring-fx" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" />
+              </defs><text>
+                <textPath href="#ring-fx" textLength="284">Free shipping over &#8377;499 &#8226; Shop now &#8226;
+                </textPath>
+              </text>
+            </svg>
+            <span class="spin__core"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CLOTHESLINE TICKER ============
+         Notes pegged to a string, looping forever. Edit the words in the first group;
+         the two copies after it only exist to make the loop seamless. -->
+    <div class="line-ticker" data-line-ticker aria-label="Stick, plan, remember, create, organize, repeat">
+      <svg class="line-ticker__rope" aria-hidden="true">
+        <defs>
+          <pattern id="rope" width="600" height="70" patternUnits="userSpaceOnUse">
+            <path d="M0,6 Q300,58 600,6" />
+            <circle cx="0" cy="6" r="5" />
+            <circle cx="600" cy="6" r="5" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="70" fill="url(#rope)" />
+      </svg>
+      <div class="line-ticker__track" aria-hidden="true">
+        <div class="line-ticker__group"><span class="tick"><span class="tick__note"><b>STICK</b></span></span><span
+            class="tick"><span class="tick__note"><span class="hand">yes!</span></span></span><span class="tick"><span
+              class="tick__note"><b>PLAN</b></span></span><span class="tick"><span class="tick__note"><span
+                class="hand">to do</span></span></span><span class="tick"><span
+              class="tick__note"><b style="font-size: 15px;">REMEMBER</b></span></span><span class="tick"><span class="tick__note"><span
+                class="hand">idea</span></span></span><span class="tick"><span
+              class="tick__note"><b>CREATE</b></span></span><span class="tick"><span class="tick__note"><span
+                class="hand">wow</span></span></span><span class="tick"><span
+              class="tick__note"><b>ORGANIZE</b></span></span><span class="tick"><span class="tick__note"><span
+                class="hand">ok!</span></span></span><span class="tick"><span
+              class="tick__note"><b>REPEAT</b></span></span><span class="tick"><span class="tick__note"><span
+                class="hand">go</span></span></span></div>
+        <div class="line-ticker__group"><span class="tick"><span class="tick__note"><b>STICK</b></span></span><span
+            class="tick"><span class="tick__note"><span class="hand">yes!</span></span></span><span class="tick"><span
+              class="tick__note"><b>PLAN</b></span></span><span class="tick"><span class="tick__note"><span
+                class="hand">to do</span></span></span><span class="tick"><span
+              class="tick__note"><b style="font-size: 15px;">REMEMBER</b></span></span><span class="tick"><span class="tick__note"><span
+                class="hand">idea</span></span></span><span class="tick"><span
+              class="tick__note"><b>CREATE</b></span></span><span class="tick"><span class="tick__note"><span
+                class="hand">wow</span></span></span><span class="tick"><span
+              class="tick__note"><b>ORGANIZE</b></span></span><span class="tick"><span class="tick__note"><span
+                class="hand">ok!</span></span></span><span class="tick"><span
+              class="tick__note"><b>REPEAT</b></span></span><span class="tick"><span class="tick__note"><span
+                class="hand">go</span></span></span></div>
+        <div class="line-ticker__group"><span class="tick"><span class="tick__note"><b>STICK</b></span></span><span
+            class="tick"><span class="tick__note"><span class="hand">yes!</span></span></span><span class="tick"><span
+              class="tick__note"><b>PLAN</b></span></span><span class="tick"><span class="tick__note"><span
+                class="hand">to do</span></span></span><span class="tick"><span
+              class="tick__note"><b style="font-size: 15px;">REMEMBER</b></span></span><span class="tick"><span class="tick__note"><span
+                class="hand">idea</span></span></span><span class="tick"><span
+              class="tick__note"><b>CREATE</b></span></span><span class="tick"><span class="tick__note"><span
+                class="hand">wow</span></span></span><span class="tick"><span
+              class="tick__note"><b>ORGANIZE</b></span></span><span class="tick"><span class="tick__note"><span
+                class="hand">ok!</span></span></span><span class="tick"><span
+              class="tick__note"><b>REPEAT</b></span></span><span class="tick"><span class="tick__note"><span
+                class="hand">go</span></span></span></div>
+      </div>
+    </div>
+
+    <!-- ============ SHOP OUR SPECIALITIES ============ -->
+    <section class="section" id="specialities">
+      <div class="wrap">
+        <div class="shead">
+          <span class="eyebrow" data-reveal="rotate">Explore what we do best</span>
+          <h2 class="h1 caps" data-split>Shop our specialities</h2>
+          <p class="lede" data-reveal>From the everyday yellow square to boxed gift sets, start with the four things we
+            make best.</p>
+        </div>
+        <div class="specials" data-stagger="rotate">
+          <a class="special" href="shop.html?collection=Office" data-tilt>
+            <img src="images/banners/special-classics.jpg" alt="Everyday Classics: the yellow square and friends"
+              width="1400" height="1000" loading="lazy">
+            <span class="special__label"><span>Everyday Classics<small>The yellow square and friends</small></span><span
+                class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 12h15m-6-6 6 6-6 6" />
+                </svg></span></span>
+          </a>
+          <a class="special" href="shop.html?collection=Study" data-tilt>
+            <img src="images/banners/special-study.jpg" alt="Study Essentials: grids, lines and page flags" width="1400"
+              height="1000" loading="lazy">
+            <span class="special__label"><span>Study Essentials<small>Grids, lines and page flags</small></span><span
+                class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 12h15m-6-6 6 6-6 6" />
+                </svg></span></span>
+          </a>
+          <a class="special" href="shop.html?collection=Planner" data-tilt>
+            <img src="images/banners/special-planner.jpg" alt="Planner Pads: to-do lists and week views" width="1400"
+              height="1000" loading="lazy">
+            <span class="special__label"><span>Planner Pads<small>To-do lists and week views</small></span><span
+                class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 12h15m-6-6 6 6-6 6" />
+                </svg></span></span>
+          </a>
+          <a class="special" href="shop.html?q=gift" data-tilt>
+            <img src="images/banners/special-gifts.jpg" alt="Gift Sets: boxed, shaped and ready to give" width="1400"
+              height="1000" loading="lazy">
+            <span class="special__label"><span>Gift Sets<small>Boxed, shaped and ready to give</small></span><span
+                class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 12h15m-6-6 6 6-6 6" />
+                </svg></span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FIND YOUR STICKY NOTE ============ -->
+    <section class="section section--tight" id="finder">
+      <div class="wrap">
+        <div class="split-panel tint-lavender">
+          <span class="deco note note--pink" data-float="2" aria-hidden="true"></span>
+          <span class="deco note" data-float="3" aria-hidden="true"></span>
+          <div>
+            <span class="eyebrow eyebrow--pink" data-reveal="rotate">Find the perfect match</span>
+            <h2 class="h1" data-split>Find your sticky note</h2>
+            <p class="lede" data-reveal="left">Not sure which pad fits the job? Search by colour, size or type and we
+              will show you the ones that match.</p>
+            <form class="finder-form" action="shop.html" method="get" role="search" data-reveal="left" data-d="1">
+              <label class="sr-only" for="finder-q">Search by colour, size or type</label>
+              <input id="finder-q" type="search" name="q" placeholder="Try pastel, grid or flags">
+              <button class="btn" type="submit">Find my note <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 12h15m-6-6 6 6-6 6" />
+                </svg></button>
+            </form>
+            <div class="chips" data-stagger>
+              <a class="chip" href="shop.html?collection=Study">For study</a>
+              <a class="chip" href="shop.html?collection=Office">For the office</a>
+              <a class="chip" href="shop.html?collection=Planner">For planning</a>
+              <a class="chip" href="shop.html?size=Mini">Mini</a>
+              <a class="chip" href="shop.html?size=Large">Large</a>
+              <a class="chip" href="shop.html?max=200">Under &#8377;200</a>
+            </div>
+          </div>
+          <div class="split-panel__img" data-reveal="iris"><img src="images/banners/find-your-note.jpg"
+              alt="Nine kinds of sticky notes laid out in a grid" width="1200" height="1200" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRENDING (product carousel) ============ -->
+    <section class="section" id="trending">
+      <div class="wrap" data-carousel>
+        <div class="carousel__head">
+          <div>
+            <h2 class="h1" data-split>Trending now</h2>
+            <p class="lede" data-reveal>The pads flying off the shelf this month.</p>
+          </div>
+          <div class="carousel__nav">
+            <button class="arrow-btn" type="button" data-prev aria-label="Previous products"><svg viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg></button>
+            <button class="arrow-btn" type="button" data-next aria-label="Next products"><svg viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg></button>
+          </div>
+        </div>
+        <div class="track" data-track data-stagger="right">
+          <article class="card" data-product data-id="p17" data-name="Sticky Note Swatches &ndash; Earl Grey, Ibiza &amp; Angora" data-price="349"
+            data-image="images/products/sticky-note-swatches-earl-grey-ibiza-angora-01.jpg" data-href="product.html?id=p17"
+            data-collection="Color Pop" data-colors="Yellow,Pink,Lavender,Mint,Blue,Peach" data-sizes="Standard"
+            data-shape="Square" data-stock="in" data-rating="4.9" data-sold="1430" data-added="14">
+            <div class="card__media tint-yellow">
+              <a class="card__link" href="product.html?id=p17" tabindex="-1" aria-hidden="true">
+                <img class="card__img" src="images/products/sticky-note-swatches-earl-grey-ibiza-angora-01.jpg" alt="" width="800"
+                  height="800" loading="lazy">
+                <img class="card__img card__img--alt" src="images/products/sticky-note-swatches-earl-grey-ibiza-angora-02.jpg" alt=""
+                  width="800" height="800" loading="lazy">
+              </a>
+              <span class="card__badge">Bestseller</span>
+              <button class="card__wish" type="button" data-wish aria-pressed="false"
+                aria-label="Save Sticky Note Swatches &ndash; Earl Grey, Ibiza &amp; Angora to wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+                </svg></button>
+              <button class="card__add" type="button" data-add
+                aria-label="Add Sticky Note Swatches &ndash; Earl Grey, Ibiza &amp; Angora to cart"><span class="card__add-text">Quick add
+                </span><span aria-hidden="true">+</span></button>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Color Pop / Square</p>
+              <h3 class="card__name"><a href="product.html?id=p17">Sticky Note Swatches &ndash; Earl Grey, Ibiza &amp; Angora</a></h3>
+              <div class="card__row">
+                <span class="price">&#8377;349 <s><span class="sr-only">Was </span>&#8377;429</s></span>
+                <span class="rating" aria-label="Rated 4.9 out of 5">4.9 <span class="muted">(221)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-product data-id="p03" data-name="Transparent Task Sticky Notes" data-price="229"
+            data-image="images/products/transparent-task-sticky-notes-01.jpg" data-href="product.html?id=p03"
+            data-collection="Transparent" data-colors="Clear" data-sizes="Standard" data-shape="Square" data-stock="in"
+            data-rating="4.6" data-sold="410" data-added="18">
+            <div class="card__media tint-blue">
+              <a class="card__link" href="product.html?id=p03" tabindex="-1" aria-hidden="true">
+                <img class="card__img" src="images/products/transparent-task-sticky-notes-01.jpg" alt="" width="800" height="800"
+                  loading="lazy">
+                <img class="card__img card__img--alt" src="images/products/transparent-task-sticky-notes-02.jpg" alt="" width="800"
+                  height="800" loading="lazy">
+              </a>
+              <span class="card__badge">New</span>
+              <button class="card__wish" type="button" data-wish aria-pressed="false"
+                aria-label="Save Transparent Task Sticky Notes to wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+                </svg></button>
+              <button class="card__add" type="button" data-add aria-label="Add Transparent Task Sticky Notes to cart"><span
+                  class="card__add-text">Quick add </span><span aria-hidden="true">+</span></button>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Transparent / Square</p>
+              <h3 class="card__name"><a href="product.html?id=p03">Transparent Task Sticky Notes</a></h3>
+              <div class="card__row">
+                <span class="price">&#8377;229 <s><span class="sr-only">Was </span>&#8377;279</s></span>
+                <span class="rating" aria-label="Rated 4.6 out of 5">4.6 <span class="muted">(88)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-product data-id="p13" data-name="Weekly Sidebar Sticky Notes" data-price="269"
+            data-image="images/products/weekly-sidebar-sticky-notes-01.jpg" data-href="product.html?id=p13"
+            data-collection="Planner" data-colors="Lavender,Mint" data-sizes="Large" data-shape="Rectangle"
+            data-stock="in" data-rating="4.8" data-sold="690" data-added="11">
+            <div class="card__media tint-lavender">
+              <a class="card__link" href="product.html?id=p13" tabindex="-1" aria-hidden="true">
+                <img class="card__img" src="images/products/weekly-sidebar-sticky-notes-01.jpg" alt="" width="800"
+                  height="800" loading="lazy">
+                <img class="card__img card__img--alt" src="images/products/weekly-sidebar-sticky-notes-02.jpg" alt=""
+                  width="800" height="800" loading="lazy">
+              </a>
+              <button class="card__wish" type="button" data-wish aria-pressed="false"
+                aria-label="Save Weekly Sidebar Sticky Notes to wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+                </svg></button>
+              <button class="card__add" type="button" data-add aria-label="Add Weekly Sidebar Sticky Notes to cart"><span
+                  class="card__add-text">Quick add </span><span aria-hidden="true">+</span></button>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Planner / Rectangle</p>
+              <h3 class="card__name"><a href="product.html?id=p13">Weekly Sidebar Sticky Notes</a></h3>
+              <div class="card__row">
+                <span class="price">&#8377;269</span>
+                <span class="rating" aria-label="Rated 4.8 out of 5">4.8 <span class="muted">(142)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-product data-id="p07" data-name="Colorblock Sticky Note Set &ndash; Matcha &amp; Dirty Chai" data-price="219"
+            data-image="images/products/colorblock-sticky-note-set-matcha-dirty-chai-01.jpg" data-href="product.html?id=p07"
+            data-collection="Color Pop" data-colors="Neon" data-sizes="Standard" data-shape="Square" data-stock="in"
+            data-rating="4.6" data-sold="760" data-added="5">
+            <div class="card__media tint-yellow">
+              <a class="card__link" href="product.html?id=p07" tabindex="-1" aria-hidden="true">
+                <img class="card__img" src="images/products/colorblock-sticky-note-set-matcha-dirty-chai-01.jpg" alt="" width="800"
+                  height="800" loading="lazy">
+                <img class="card__img card__img--alt" src="images/products/colorblock-sticky-note-set-matcha-dirty-chai-02.jpg" alt=""
+                  width="800" height="800" loading="lazy">
+              </a>
+              <button class="card__wish" type="button" data-wish aria-pressed="false"
+                aria-label="Save Colorblock Sticky Note Set &ndash; Matcha &amp; Dirty Chai to wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+                </svg></button>
+              <button class="card__add" type="button" data-add aria-label="Add Colorblock Sticky Note Set &ndash; Matcha &amp; Dirty Chai to cart"><span
+                  class="card__add-text">Quick add </span><span aria-hidden="true">+</span></button>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Color Pop / Square</p>
+              <h3 class="card__name"><a href="product.html?id=p07">Colorblock Sticky Note Set &ndash; Matcha &amp; Dirty Chai</a></h3>
+              <div class="card__row">
+                <span class="price">&#8377;219</span>
+                <span class="rating" aria-label="Rated 4.6 out of 5">4.6 <span class="muted">(157)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-product data-id="p10" data-name="Large Sticky Notes Set &ndash; Monthly Overview" data-price="279"
+            data-image="images/products/large-sticky-notes-set-monthly-overview-01.jpg" data-href="product.html?id=p10"
+            data-collection="Office" data-colors="Yellow,Blue" data-sizes="Large" data-shape="Square" data-stock="in"
+            data-rating="4.7" data-sold="450" data-added="3">
+            <div class="card__media tint-blue">
+              <a class="card__link" href="product.html?id=p10" tabindex="-1" aria-hidden="true">
+                <img class="card__img" src="images/products/large-sticky-notes-set-monthly-overview-01.jpg" alt="" width="800" height="800"
+                  loading="lazy">
+                <img class="card__img card__img--alt" src="images/products/large-sticky-notes-set-monthly-overview-02.jpg" alt=""
+                  width="800" height="800" loading="lazy">
+              </a>
+              <button class="card__wish" type="button" data-wish aria-pressed="false"
+                aria-label="Save Large Sticky Notes Set &ndash; Monthly Overview to wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+                </svg></button>
+              <button class="card__add" type="button" data-add aria-label="Add Large Sticky Notes Set &ndash; Monthly Overview to cart"><span
+                  class="card__add-text">Quick add </span><span aria-hidden="true">+</span></button>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Office / Square</p>
+              <h3 class="card__name"><a href="product.html?id=p10">Large Sticky Notes Set &ndash; Monthly Overview</a></h3>
+              <div class="card__row">
+                <span class="price">&#8377;279</span>
+                <span class="rating" aria-label="Rated 4.7 out of 5">4.7 <span class="muted">(83)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-product data-id="p18" data-name="Square Sticky Notes &ndash; Desert Tortoiseshell" data-price="599"
+            data-image="images/products/square-sticky-notes-desert-tortoiseshell-01.jpg" data-href="product.html?id=p18"
+            data-collection="Pastel" data-colors="Pink,Lavender,Mint,Peach" data-sizes="Standard" data-shape="Square"
+            data-stock="in" data-rating="4.9" data-sold="220" data-added="15">
+            <div class="card__media tint-peach">
+              <a class="card__link" href="product.html?id=p18" tabindex="-1" aria-hidden="true">
+                <img class="card__img" src="images/products/square-sticky-notes-desert-tortoiseshell-01.jpg" alt="" width="800"
+                  height="800" loading="lazy">
+                <img class="card__img card__img--alt" src="images/products/square-sticky-notes-desert-tortoiseshell-02.jpg" alt=""
+                  width="800" height="800" loading="lazy">
+              </a>
+              <button class="card__wish" type="button" data-wish aria-pressed="false"
+                aria-label="Save Square Sticky Notes &ndash; Desert Tortoiseshell to wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+                </svg></button>
+              <button class="card__add" type="button" data-add aria-label="Add Square Sticky Notes &ndash; Desert Tortoiseshell to cart"><span
+                  class="card__add-text">Quick add </span><span aria-hidden="true">+</span></button>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Pastel / Square</p>
+              <h3 class="card__name"><a href="product.html?id=p18">Square Sticky Notes &ndash; Desert Tortoiseshell</a></h3>
+              <div class="card__row">
+                <span class="price">&#8377;599 <s><span class="sr-only">Was </span>&#8377;749</s></span>
+                <span class="rating" aria-label="Rated 4.9 out of 5">4.9 <span class="muted">(64)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-product data-id="p04" data-name="Transparent Graph Sticky Notes" data-price="179"
+            data-image="images/products/transparent-graph-sticky-notes-01.jpg" data-href="product.html?id=p04" data-collection="Study"
+            data-colors="Mint,Blue" data-sizes="Standard" data-shape="Square" data-stock="in" data-rating="4.7"
+            data-sold="520" data-added="10">
+            <div class="card__media tint-mint">
+              <a class="card__link" href="product.html?id=p04" tabindex="-1" aria-hidden="true">
+                <img class="card__img" src="images/products/transparent-graph-sticky-notes-01.jpg" alt="" width="800" height="800"
+                  loading="lazy">
+                <img class="card__img card__img--alt" src="images/products/transparent-graph-sticky-notes-02.jpg" alt="" width="800"
+                  height="800" loading="lazy">
+              </a>
+              <button class="card__wish" type="button" data-wish aria-pressed="false"
+                aria-label="Save Transparent Graph Sticky Notes to wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+                </svg></button>
+              <button class="card__add" type="button" data-add aria-label="Add Transparent Graph Sticky Notes to cart"><span
+                  class="card__add-text">Quick add </span><span aria-hidden="true">+</span></button>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Study / Square</p>
+              <h3 class="card__name"><a href="product.html?id=p04">Transparent Graph Sticky Notes</a></h3>
+              <div class="card__row">
+                <span class="price">&#8377;179</span>
+                <span class="rating" aria-label="Rated 4.7 out of 5">4.7 <span class="muted">(96)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-product data-id="p16" data-name="Transparent Pill Tab Sticky Notes &ndash; Ash" data-price="149"
+            data-image="images/products/transparent-pill-tab-sticky-notes-ash-01.jpg" data-href="product.html?id=p16"
+            data-collection="Transparent" data-colors="Clear,Neon" data-sizes="Mini" data-shape="Flag" data-stock="in"
+            data-rating="4.6" data-sold="360" data-added="13">
+            <div class="card__media tint-mint">
+              <a class="card__link" href="product.html?id=p16" tabindex="-1" aria-hidden="true">
+                <img class="card__img" src="images/products/transparent-pill-tab-sticky-notes-ash-01.jpg" alt="" width="800"
+                  height="800" loading="lazy">
+                <img class="card__img card__img--alt" src="images/products/transparent-pill-tab-sticky-notes-ash-02.jpg" alt=""
+                  width="800" height="800" loading="lazy">
+              </a>
+              <button class="card__wish" type="button" data-wish aria-pressed="false"
+                aria-label="Save Transparent Pill Tab Sticky Notes &ndash; Ash to wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+                </svg></button>
+              <button class="card__add" type="button" data-add
+                aria-label="Add Transparent Pill Tab Sticky Notes &ndash; Ash to cart"><span class="card__add-text">Quick add
+                </span><span aria-hidden="true">+</span></button>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Transparent / Flag</p>
+              <h3 class="card__name"><a href="product.html?id=p16">Transparent Pill Tab Sticky Notes &ndash; Ash</a></h3>
+              <div class="card__row">
+                <span class="price">&#8377;149</span>
+                <span class="rating" aria-label="Rated 4.6 out of 5">4.6 <span class="muted">(66)</span></span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="carousel__bar" aria-hidden="true"><i data-progress></i></div>
+      </div>
+    </section>
+
+    <!-- ============ COUPON STRIP (ad) ============ -->
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="coupon" data-reveal="pop">
+          <p class="coupon__off" data-float="2">10% off</p>
+          <div class="coupon__text">
+            <h2 class="h3">A little off your first stack</h2>
+            <p>Use code <span class="code">STICKY10</span> on the cart page. Works on every pad and set.</p>
+          </div>
+          <!-- data-copy is the text that the button copies -->
+          <button class="btn" type="button" data-copy="STICKY10">Copy code</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SHOP STICKY NOTES BY TYPE ============ -->
+    <section class="section section--paper" id="types">
+      <div class="wrap" data-carousel>
+        <div class="carousel__head">
+          <div>
+            <h2 class="h1" data-split>Shop sticky notes by type</h2>
+            <p class="lede" data-reveal>Browse by type to find the pad that fits the way you work.</p>
+          </div>
+          <div class="carousel__nav">
+            <button class="arrow-btn" type="button" data-prev aria-label="Previous types"><svg viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg></button>
+            <button class="arrow-btn" type="button" data-next aria-label="Next types"><svg viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg></button>
+          </div>
+        </div>
+        <div class="track" data-track data-stagger="note">
+          <a class="type peel" href="shop.html?q=classic">
+            <div>
+              <h3>Classic squares</h3>
+              <p>the yellow original</p>
+            </div>
+            <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg></span>
+          </a>
+          <a class="type peel" href="shop.html?q=pastel">
+            <div>
+              <h3>Pastel notes</h3>
+              <p>soft, calm colours</p>
+            </div>
+            <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg></span>
+          </a>
+          <a class="type peel" href="shop.html?q=neon">
+            <div>
+              <h3>Neon notes</h3>
+              <p>impossible to miss</p>
+            </div>
+            <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg></span>
+          </a>
+          <a class="type peel" href="shop.html?q=clear">
+            <div>
+              <h3>Transparent notes</h3>
+              <p>annotate, leave no mark</p>
+            </div>
+            <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg></span>
+          </a>
+          <a class="type peel" href="shop.html?q=grid">
+            <div>
+              <h3>Grid notes</h3>
+              <p>sketches and sums</p>
+            </div>
+            <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg></span>
+          </a>
+          <a class="type peel" href="shop.html?q=lined">
+            <div>
+              <h3>Lined notes</h3>
+              <p>tidy longer thoughts</p>
+            </div>
+            <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg></span>
+          </a>
+          <a class="type peel" href="shop.html?q=to-do">
+            <div>
+              <h3>To-do pads</h3>
+              <p>tick your way down</p>
+            </div>
+            <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg></span>
+          </a>
+          <a class="type peel" href="shop.html?shape=Flag">
+            <div>
+              <h3>Page flags</h3>
+              <p>find the page fast</p>
+            </div>
+            <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg></span>
+          </a>
+          <a class="type peel" href="shop.html?shape=Shaped">
+            <div>
+              <h3>Shaped notes</h3>
+              <p>hearts, clouds, dots</p>
+            </div>
+            <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg></span>
+          </a>
+        </div>
+        <div class="carousel__bar" aria-hidden="true"><i data-progress></i></div>
+      </div>
+    </section>
+
+    <!-- ============ AD BANNER 1 ============ -->
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="ad tint-yellow" data-reveal="clip">
+          <div class="ad__img">
+            <img src="images/banners/ad-rainbow.jpg" alt="" width="1800" height="800" loading="lazy"
+              data-parallax="-50">
+
+            <!-- <video autoplay muted loop playsinline width="1800" height="800"
+              poster="images/banners/hero-sticky-notes.jpg">
+              <source src="images/banners/ad.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video> -->
+
+          </div>
+
+
+          <div class="ad__copy">
+            <span class="eyebrow eyebrow--pink">This month only</span>
+            <h2 class="h1">Six colours. 600 sheets.</h2>
+            <p>Take 10% off the Sticky Note Swatches set with code <span class="code">STICKY10</span> at the cart.</p>
+            <a class="btn" href="product.html?id=p17">Shop the Swatches <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg></a>
+          </div>
+          <div class="spin spin--ad" aria-hidden="true" data-float>
+            <svg class="spin__ring" viewBox="0 0 120 120" aria-hidden="true">
+              <defs>
+                <path id="ring-ad1" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" />
+              </defs><text>
+                <textPath href="#ring-ad1" textLength="284">Limited offer &#8226; Limited offer &#8226;</textPath>
+              </text>
+            </svg>
+            <span class="spin__core">10%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BEST SELLERS ============ -->
+    <section class="section" id="best-sellers">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2 class="h1" data-split>Best sellers</h2>
+            <p class="lede" data-reveal>The pads people come back for.</p>
+          </div>
+          <a class="link-arrow" href="shop.html?sort=selling">See all best sellers <svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+              aria-hidden="true">
+              <path d="M4 12h15m-6-6 6 6-6 6" />
+            </svg></a>
+        </div>
+        <div class="grid" data-stagger="zoom">
+          <article class="card" data-product data-id="p01" data-name="Transparent Sticky Notes &ndash; Cotton" data-price="199"
+            data-image="images/products/transparent-sticky-notes-cotton-01.jpg" data-href="product.html?id=p01"
+            data-collection="Pastel" data-colors="Pink,Lavender,Mint" data-sizes="Standard" data-shape="Square"
+            data-stock="in" data-rating="4.8" data-sold="930" data-added="8">
+            <div class="card__media tint-pink">
+              <a class="card__link" href="product.html?id=p01" tabindex="-1" aria-hidden="true">
+                <img class="card__img" src="images/products/transparent-sticky-notes-cotton-01.jpg" alt="" width="800" height="800"
+                  loading="lazy">
+                <img class="card__img card__img--alt" src="images/products/transparent-sticky-notes-cotton-02.jpg" alt="" width="800"
+                  height="800" loading="lazy">
+              </a>
+              <span class="card__badge">Bestseller</span>
+              <button class="card__wish" type="button" data-wish aria-pressed="false"
+                aria-label="Save Transparent Sticky Notes &ndash; Cotton to wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+                </svg></button>
+              <button class="card__add" type="button" data-add aria-label="Add Transparent Sticky Notes &ndash; Cotton to cart"><span
+                  class="card__add-text">Quick add </span><span aria-hidden="true">+</span></button>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Pastel / Square</p>
+              <h3 class="card__name"><a href="product.html?id=p01">Transparent Sticky Notes &ndash; Cotton</a></h3>
+              <div class="card__row">
+                <span class="price">&#8377;199 <s><span class="sr-only">Was </span>&#8377;249</s></span>
+                <span class="rating" aria-label="Rated 4.8 out of 5">4.8 <span class="muted">(124)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-product data-id="p02" data-name="Square Sticky Notes &ndash; Au Lait" data-price="149"
+            data-image="images/products/square-sticky-notes-au-lait-01.jpg" data-href="product.html?id=p02"
+            data-collection="Office" data-colors="Yellow" data-sizes="Standard,Large" data-shape="Square"
+            data-stock="in" data-rating="4.7" data-sold="1840" data-added="2">
+            <div class="card__media tint-yellow">
+              <a class="card__link" href="product.html?id=p02" tabindex="-1" aria-hidden="true">
+                <img class="card__img" src="images/products/square-sticky-notes-au-lait-01.jpg" alt="" width="800"
+                  height="800" loading="lazy">
+                <img class="card__img card__img--alt" src="images/products/square-sticky-notes-au-lait-02.jpg" alt=""
+                  width="800" height="800" loading="lazy">
+              </a>
+              <span class="card__badge">Bestseller</span>
+              <button class="card__wish" type="button" data-wish aria-pressed="false"
+                aria-label="Save Square Sticky Notes &ndash; Au Lait to wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+                </svg></button>
+              <button class="card__add" type="button" data-add aria-label="Add Square Sticky Notes &ndash; Au Lait to cart"><span
+                  class="card__add-text">Quick add </span><span aria-hidden="true">+</span></button>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Office / Square</p>
+              <h3 class="card__name"><a href="product.html?id=p02">Square Sticky Notes &ndash; Au Lait</a></h3>
+              <div class="card__row">
+                <span class="price">&#8377;149</span>
+                <span class="rating" aria-label="Rated 4.7 out of 5">4.7 <span class="muted">(312)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-product data-id="p06" data-name="Urgent Sticky Notes" data-price="249"
+            data-image="images/products/urgent-sticky-notes-01.jpg" data-href="product.html?id=p06"
+            data-collection="Planner" data-colors="Peach,Pink" data-sizes="Large" data-shape="Rectangle" data-stock="in"
+            data-rating="4.9" data-sold="1210" data-added="9">
+            <div class="card__media tint-peach">
+              <a class="card__link" href="product.html?id=p06" tabindex="-1" aria-hidden="true">
+                <img class="card__img" src="images/products/urgent-sticky-notes-01.jpg" alt="" width="800" height="800"
+                  loading="lazy">
+                <img class="card__img card__img--alt" src="images/products/urgent-sticky-notes-02.jpg" alt="" width="800"
+                  height="800" loading="lazy">
+              </a>
+              <span class="card__badge">Bestseller</span>
+              <button class="card__wish" type="button" data-wish aria-pressed="false"
+                aria-label="Save Urgent Sticky Notes to wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+                </svg></button>
+              <button class="card__add" type="button" data-add aria-label="Add Urgent Sticky Notes to cart"><span
+                  class="card__add-text">Quick add </span><span aria-hidden="true">+</span></button>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Planner / Rectangle</p>
+              <h3 class="card__name"><a href="product.html?id=p06">Urgent Sticky Notes</a></h3>
+              <div class="card__row">
+                <span class="price">&#8377;249 <s><span class="sr-only">Was </span>&#8377;299</s></span>
+                <span class="rating" aria-label="Rated 4.9 out of 5">4.9 <span class="muted">(203)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-product data-id="p08" data-name="Tab Sticky Notes &ndash; Santorini" data-price="129"
+            data-image="images/products/tab-sticky-notes-santorini-01.jpg" data-href="product.html?id=p08"
+            data-collection="Study" data-colors="Neon,Pink,Blue" data-sizes="Mini" data-shape="Flag" data-stock="in"
+            data-rating="4.8" data-sold="1620" data-added="7">
+            <div class="card__media tint-lavender">
+              <a class="card__link" href="product.html?id=p08" tabindex="-1" aria-hidden="true">
+                <img class="card__img" src="images/products/tab-sticky-notes-santorini-01.jpg" alt="" width="800"
+                  height="800" loading="lazy">
+                <img class="card__img card__img--alt" src="images/products/tab-sticky-notes-santorini-02.jpg" alt=""
+                  width="800" height="800" loading="lazy">
+              </a>
+              <span class="card__badge">Bestseller</span>
+              <button class="card__wish" type="button" data-wish aria-pressed="false"
+                aria-label="Save Tab Sticky Notes &ndash; Santorini to wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+                </svg></button>
+              <button class="card__add" type="button" data-add aria-label="Add Tab Sticky Notes &ndash; Santorini to cart"><span
+                  class="card__add-text">Quick add </span><span aria-hidden="true">+</span></button>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Study / Flag</p>
+              <h3 class="card__name"><a href="product.html?id=p08">Tab Sticky Notes &ndash; Santorini</a></h3>
+              <div class="card__row">
+                <span class="price">&#8377;129</span>
+                <span class="rating" aria-label="Rated 4.8 out of 5">4.8 <span class="muted">(268)</span></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- ============ BUILT FOR STICKY NOTE LOVERS (about) ============ -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="split-panel tint-paper">
+          <span class="deco note note--lavender" data-float="3" aria-hidden="true"></span>
+          <div class="split-panel__img" data-reveal="wipe"><img src="images/banners/about-Notera.jpg"
+              alt="Lavender and pastel sticky note pads beside a kraft shipping box" width="1200" height="1200"
+              loading="lazy"></div>
+          <div>
+            <span class="eyebrow eyebrow--lavender" data-reveal="rotate">About Notera</span>
+            <h2 class="h1" data-split>Built for sticky note lovers.</h2>
+            <p class="lede" data-reveal="right">We make one thing. From the everyday yellow square to hard-to-find clear
+              film and week-view pads, Notera exists to make good sticky notes easier to discover and buy.</p>
+            <p class="lede" data-reveal="right" data-d="1">Every pad is 80 gsm FSC-certified paper with a water-based
+              adhesive that holds on glass, paint and screens, and lifts off without a mark.</p>
+            <ul class="facts" data-stagger>
+              <li><b>20</b><span>pads</span></li>
+              <li><b>6</b><span>collections</span></li>
+              <li><b>3</b><span>sizes</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT STICKS (three steps) ============ -->
+    <section class="section section--tight" id="how">
+      <div class="wrap">
+        <div class="shead">
+          <span class="eyebrow eyebrow--peach" data-reveal="rotate">How it works</span>
+          <h2 class="h1" data-split>Peel. Stick. Repeat.</h2>
+        </div>
+        <div class="steps">
+          <div class="note" data-reveal="peelin">
+            <div>
+              <h3 class="hand">Notera</h3>
+              <p>Lift a sheet from the side, not the bottom, and it stays flat instead of curling.</p>
+            </div>
+          </div>
+          <div class="note note--pink" data-reveal="peelin" data-d="1">
+            <div>
+              <h3 class="hand">Stick</h3>
+              <p>Press along the adhesive strip. It holds on paper, glass, paint and laptop lids.</p>
+            </div>
+          </div>
+          <div class="note note--blue" data-reveal="peelin" data-d="2">
+            <div>
+              <h3 class="hand">Repeat</h3>
+              <p>Move it as plans change. Each sheet re-sticks many times and leaves nothing behind.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GREAT PICKS UNDER BUDGET ============ -->
+    <section class="section" id="budget">
+      <div class="wrap">
+        <div class="shead">
+          <span class="eyebrow" data-reveal="rotate">Shop by budget</span>
+          <h2 class="h1" data-split>Great picks under budget</h2>
+        </div>
+        <div class="budget" data-stagger="pop">
+          <a class="tint-yellow" href="shop.html?max=150"><small>Under</small><span><b>&#8377;150</b><span
+                class="row">Minis and flags <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 12h15m-6-6 6 6-6 6" />
+                  </svg></span></span></span></a>
+          <a class="tint-pink" href="shop.html?max=200"><small>Under</small><span><b>&#8377;200</b><span
+                class="row">Everyday pads <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 12h15m-6-6 6 6-6 6" />
+                  </svg></span></span></span></a>
+          <a class="tint-mint" href="shop.html?max=300"><small>Under</small><span><b>&#8377;300</b><span
+                class="row">Planners and clear notes <span class="go"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M4 12h15m-6-6 6 6-6 6" />
+                  </svg></span></span></span></a>
+          <a class="tint-lavender" href="shop.html?max=600"><small>Under</small><span><b>&#8377;600</b><span
+                class="row">Sets and gift boxes <span class="go"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M4 12h15m-6-6 6 6-6 6" />
+                  </svg></span></span></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROMO DUO (ads) ============ -->
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="duo">
+          <a class="promo-card tint-blue" href="product.html?id=p03" data-reveal="left">
+            <div>
+              <span class="flag">Save &#8377;50</span>
+              <h3 class="h2">Transparent Task Sticky Notes</h3>
+              <p>Write on them, see through them, peel them off the page.</p>
+              <span class="price">&#8377;229 <s>&#8377;279</s></span>
+              <span class="link-arrow">Shop clear notes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 12h15m-6-6 6 6-6 6" />
+                </svg></span>
+            </div>
+            <div class="promo-card__img" data-float="3"><img src="images/products/transparent-task-sticky-notes-03.jpg"
+                alt="Clear film notes lying on a printed page" width="800" height="800" loading="lazy"></div>
+          </a>
+          <a class="promo-card tint-peach" href="product.html?id=p06" data-reveal="right">
+            <div>
+              <span class="flag">Save &#8377;50</span>
+              <h3 class="h2">Urgent Sticky Notes</h3>
+              <p>Ten boxes a day. Sixty days of getting things done.</p>
+              <span class="price">&#8377;249 <s>&#8377;299</s></span>
+              <span class="link-arrow">Shop to-do pads <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 12h15m-6-6 6 6-6 6" />
+                </svg></span>
+            </div>
+            <div class="promo-card__img" data-float="2"><img src="images/products/urgent-sticky-notes-01.jpg"
+                alt="Peach and pink to-do list pads with checkboxes" width="800" height="800" loading="lazy"></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CRAFTED JUST FOR YOU ============ -->
+    <section class="section section--paper" id="crafted">
+      <div class="wrap">
+        <div class="shead">
+          <span class="eyebrow eyebrow--pink" data-reveal="rotate">Pick your kind</span>
+          <h2 class="h1" data-split>Crafted just for you</h2>
+          <p class="lede" data-reveal>Sets and pads put together for the way different people work, study and give.</p>
+        </div>
+        <div class="crafted" data-stagger="blur">
+          <div class="craft">
+            <a class="craft__img" href="shop.html?collection=Office" tabindex="-1" aria-hidden="true"><img
+                src="images/crafted/desk-sets.jpg" alt="" width="900" height="900" loading="lazy"></a>
+            <h3>Desk Sets</h3>
+            <a class="btn btn--ghost btn--sm" href="shop.html?collection=Office" aria-label="Shop Desk Sets">Shop
+              now</a>
+          </div>
+          <div class="craft">
+            <a class="craft__img" href="shop.html?collection=Study" tabindex="-1" aria-hidden="true"><img
+                src="images/crafted/study-packs.jpg" alt="" width="900" height="900" loading="lazy"></a>
+            <h3>Study Packs</h3>
+            <a class="btn btn--ghost btn--sm" href="shop.html?collection=Study" aria-label="Shop Study Packs">Shop
+              now</a>
+          </div>
+          <div class="craft">
+            <a class="craft__img" href="shop.html?collection=Planner" tabindex="-1" aria-hidden="true"><img
+                src="images/crafted/planner-kits.jpg" alt="" width="900" height="900" loading="lazy"></a>
+            <h3>Planner Kits</h3>
+            <a class="btn btn--ghost btn--sm" href="shop.html?collection=Planner" aria-label="Shop Planner Kits">Shop
+              now</a>
+          </div>
+          <div class="craft">
+            <a class="craft__img" href="shop.html?q=gift" tabindex="-1" aria-hidden="true"><img
+                src="images/crafted/gift-boxes.jpg" alt="" width="900" height="900" loading="lazy"></a>
+            <h3>Gift Boxes</h3>
+            <a class="btn btn--ghost btn--sm" href="shop.html?q=gift" aria-label="Shop Gift Boxes">Shop now</a>
+          </div>
+          <div class="craft">
+            <a class="craft__img" href="shop.html?size=Mini" tabindex="-1" aria-hidden="true"><img
+                src="images/crafted/mini-notes.jpg" alt="" width="900" height="900" loading="lazy"></a>
+            <h3>Mini Notes</h3>
+            <a class="btn btn--ghost btn--sm" href="shop.html?size=Mini" aria-label="Shop Mini Notes">Shop now</a>
+          </div>
+          <div class="craft">
+            <a class="craft__img" href="shop.html?shape=Flag" tabindex="-1" aria-hidden="true"><img
+                src="images/crafted/page-flags.jpg" alt="" width="900" height="900" loading="lazy"></a>
+            <h3>Page Flags</h3>
+            <a class="btn btn--ghost btn--sm" href="shop.html?shape=Flag" aria-label="Shop Page Flags">Shop now</a>
+          </div>
+          <div class="craft">
+            <a class="craft__img" href="shop.html?collection=Transparent" tabindex="-1" aria-hidden="true"><img
+                src="images/crafted/clear-notes.jpg" alt="" width="900" height="900" loading="lazy"></a>
+            <h3>Clear Notes</h3>
+            <a class="btn btn--ghost btn--sm" href="shop.html?collection=Transparent" aria-label="Shop Clear Notes">Shop
+              now</a>
+          </div>
+          <div class="craft">
+            <a class="craft__img" href="shop.html?shape=Shaped" tabindex="-1" aria-hidden="true"><img
+                src="images/crafted/shaped-notes.jpg" alt="" width="900" height="900" loading="lazy"></a>
+            <h3>Shaped Notes</h3>
+            <a class="btn btn--ghost btn--sm" href="shop.html?shape=Shaped" aria-label="Shop Shaped Notes">Shop now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SIZE SHOWCASE ============ -->
+    <section class="section" id="sizes">
+      <div class="wrap sizes">
+        <div class="sizes__copy">
+          <h2 class="h1" data-split>Three sizes, drawn to scale</h2>
+          <p class="lede" data-reveal>Mini for a single word, Standard for a thought, Large for a plan. Every pad comes
+            in at least one of them.</p>
+          <a class="btn btn--ghost" href="shop.html" data-reveal>Find your size <svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+              aria-hidden="true">
+              <path d="M4 12h15m-6-6 6 6-6 6" />
+            </svg></a>
+        </div>
+        <div class="sizes__board">
+          <a class="note note--mint size-mini peel" href="shop.html?size=Mini" data-reveal="grow"><b>Mini</b><small>51
+              x
+              38 mm</small></a>
+          <a class="note size-standard peel" href="shop.html?size=Standard" data-reveal="grow"
+            data-d="1"><b>Standard</b><small>76 x 76 mm</small></a>
+          <a class="note note--pink size-large peel" href="shop.html?size=Large" data-reveal="grow"
+            data-d="2"><b>Large</b><small>101 x 101 mm</small></a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ DESK / LIFESTYLE SCENE ============ -->
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="desk tint-peach" data-scene>
+          <div class="desk__photo"><img src="images/lifestyle/creative-desk.png"
+              alt="A bright work desk with a laptop, notebook, mug and sticky note pads" width="1800" height="1100"
+              loading="lazy" data-parallax="-40"></div>
+          <div class="note"><span class="hand">draft by 11</span></div>
+          <div class="note note--blue"><span class="hand">lunch with Rhea</span></div>
+          <div class="note note--pink"><span class="hand">book tickets</span></div>
+          <div class="note note--mint"><span class="hand">breathe</span></div>
+          <div class="desk__copy" data-reveal>
+            <h2 class="h2">A desk that remembers for you</h2>
+            <p>Build a wall of what matters this week. Our adhesive holds on glass, paint and laptop lids, and lifts off
+              without a mark.</p>
+            <a class="btn" href="shop.html?collection=Office">Shop the office collection
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ============ NEW ARRIVALS ============ -->
+    <section class="section" id="new">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2 class="h1" data-split>New arrivals</h2>
+            <p class="lede" data-reveal>Fresh off the press this month.</p>
+          </div>
+          <a class="link-arrow" href="shop.html?sort=newest">Shop new <svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+              aria-hidden="true">
+              <path d="M4 12h15m-6-6 6 6-6 6" />
+            </svg></a>
+        </div>
+        <div class="grid" data-stagger="skew">
+          <article class="card" data-product data-id="p19" data-name="Quarter Arch Sticky Notes &ndash; Aspen" data-price="209"
+            data-image="images/products/quarter-arch-sticky-notes-aspen-01.jpg" data-href="product.html?id=p19"
+            data-collection="Planner" data-colors="Peach,Pink" data-sizes="Standard" data-shape="Shaped" data-stock="in"
+            data-rating="4.4" data-sold="120" data-added="20">
+            <div class="card__media tint-pink">
+              <a class="card__link" href="product.html?id=p19" tabindex="-1" aria-hidden="true">
+                <img class="card__img" src="images/products/quarter-arch-sticky-notes-aspen-01.jpg" alt="" width="800"
+                  height="800" loading="lazy">
+                <img class="card__img card__img--alt" src="images/products/quarter-arch-sticky-notes-aspen-02.jpg" alt=""
+                  width="800" height="800" loading="lazy">
+              </a>
+              <span class="card__badge">New</span>
+              <button class="card__wish" type="button" data-wish aria-pressed="false"
+                aria-label="Save Quarter Arch Sticky Notes &ndash; Aspen to wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+                </svg></button>
+              <button class="card__add" type="button" data-add
+                aria-label="Add Quarter Arch Sticky Notes &ndash; Aspen to cart"><span class="card__add-text">Quick add
+                </span><span aria-hidden="true">+</span></button>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Planner / Shaped</p>
+              <h3 class="card__name"><a href="product.html?id=p19">Quarter Arch Sticky Notes &ndash; Aspen</a></h3>
+              <div class="card__row">
+                <span class="price">&#8377;209</span>
+                <span class="rating" aria-label="Rated 4.4 out of 5">4.4 <span class="muted">(33)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-product data-id="p15" data-name="Mosaic Sticky Notes &ndash; Palette Vol. 1" data-price="189"
+            data-image="images/products/mosaic-sticky-notes-palette-vol-1-01.jpg" data-href="product.html?id=p15"
+            data-collection="Pastel" data-colors="Lavender" data-sizes="Standard" data-shape="Square" data-stock="in"
+            data-rating="4.7" data-sold="280" data-added="19">
+            <div class="card__media tint-lavender">
+              <a class="card__link" href="product.html?id=p15" tabindex="-1" aria-hidden="true">
+                <img class="card__img" src="images/products/mosaic-sticky-notes-palette-vol-1-01.jpg" alt="" width="800"
+                  height="800" loading="lazy">
+                <img class="card__img card__img--alt" src="images/products/mosaic-sticky-notes-palette-vol-1-02.jpg" alt=""
+                  width="800" height="800" loading="lazy">
+              </a>
+              <span class="card__badge">New</span>
+              <button class="card__wish" type="button" data-wish aria-pressed="false"
+                aria-label="Save Mosaic Sticky Notes &ndash; Palette Vol. 1 to wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+                </svg></button>
+              <button class="card__add" type="button" data-add aria-label="Add Mosaic Sticky Notes &ndash; Palette Vol. 1 to cart"><span
+                  class="card__add-text">Quick add </span><span aria-hidden="true">+</span></button>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Pastel / Square</p>
+              <h3 class="card__name"><a href="product.html?id=p15">Mosaic Sticky Notes &ndash; Palette Vol. 1</a></h3>
+              <div class="card__row">
+                <span class="price">&#8377;189</span>
+                <span class="rating" aria-label="Rated 4.7 out of 5">4.7 <span class="muted">(91)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-product data-id="p20" data-name="Semicircle Transparent Sticky Notes &ndash; Ash" data-price="249"
+            data-image="images/products/semicircle-transparent-sticky-notes-ash-01.jpg" data-href="product.html?id=p20"
+            data-collection="Transparent" data-colors="Clear" data-sizes="Large" data-shape="Square" data-stock="in"
+            data-rating="4.7" data-sold="170" data-added="16">
+            <div class="card__media tint-blue">
+              <a class="card__link" href="product.html?id=p20" tabindex="-1" aria-hidden="true">
+                <img class="card__img" src="images/products/semicircle-transparent-sticky-notes-ash-01.jpg" alt="" width="800"
+                  height="800" loading="lazy">
+                <img class="card__img card__img--alt" src="images/products/semicircle-transparent-sticky-notes-ash-02.jpg" alt=""
+                  width="800" height="800" loading="lazy">
+              </a>
+              <span class="card__badge">New</span>
+              <button class="card__wish" type="button" data-wish aria-pressed="false"
+                aria-label="Save Semicircle Transparent Sticky Notes &ndash; Ash to wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+                </svg></button>
+              <button class="card__add" type="button" data-add aria-label="Add Semicircle Transparent Sticky Notes &ndash; Ash to cart"><span
+                  class="card__add-text">Quick add </span><span aria-hidden="true">+</span></button>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Transparent / Square</p>
+              <h3 class="card__name"><a href="product.html?id=p20">Semicircle Transparent Sticky Notes &ndash; Ash</a></h3>
+              <div class="card__row">
+                <span class="price">&#8377;249</span>
+                <span class="rating" aria-label="Rated 4.7 out of 5">4.7 <span class="muted">(52)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-product data-id="p11" data-name="Shape Sticky Note Set &ndash; Palette Vol. 1" data-price="189"
+            data-image="images/products/shape-sticky-note-set-palette-vol-1-01.jpg" data-href="product.html?id=p11"
+            data-collection="Color Pop" data-colors="Pink,Blue" data-sizes="Standard" data-shape="Shaped"
+            data-stock="in" data-rating="4.4" data-sold="190" data-added="17">
+            <div class="card__media tint-pink">
+              <a class="card__link" href="product.html?id=p11" tabindex="-1" aria-hidden="true">
+                <img class="card__img" src="images/products/shape-sticky-note-set-palette-vol-1-01.jpg" alt="" width="800"
+                  height="800" loading="lazy">
+                <img class="card__img card__img--alt" src="images/products/shape-sticky-note-set-palette-vol-1-02.jpg" alt=""
+                  width="800" height="800" loading="lazy">
+              </a>
+              <span class="card__badge">New</span>
+              <button class="card__wish" type="button" data-wish aria-pressed="false"
+                aria-label="Save Shape Sticky Note Set &ndash; Palette Vol. 1 to wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+                </svg></button>
+              <button class="card__add" type="button" data-add
+                aria-label="Add Shape Sticky Note Set &ndash; Palette Vol. 1 to cart"><span class="card__add-text">Quick add
+                </span><span aria-hidden="true">+</span></button>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Color Pop / Shaped</p>
+              <h3 class="card__name"><a href="product.html?id=p11">Shape Sticky Note Set &ndash; Palette Vol. 1</a></h3>
+              <div class="card__row">
+                <span class="price">&#8377;189</span>
+                <span class="rating" aria-label="Rated 4.4 out of 5">4.4 <span class="muted">(45)</span></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ============ BULK ORDERS (ad) ============ -->
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="split-panel tint-lavender">
+          <span class="deco note note--mint" data-float="2" aria-hidden="true"></span>
+          <div class="split-panel__img" data-reveal="iris"><img src="images/banners/ad-bulk.jpg"
+              alt="Tall stacks of sticky note pads in seven colours beside shipping boxes" width="1400" height="1000"
+              loading="lazy"></div>
+          <div>
+            <span class="eyebrow eyebrow--peach" data-reveal="rotate">Bulk and team orders</span>
+            <h2 class="h1" data-split>Stocking a whole office?</h2>
+            <p class="lede" data-reveal="right">Ordering for a team, a classroom or an event? Tell us what you need and
+              we will send a bulk quote within one working day.</p>
+            <ul class="ticks" data-stagger="left">
+              <li>GST invoice with every order</li>
+              <li>Bulk pricing from 50 pads</li>
+              <li>Custom-printed headers and logos</li>
+              <li>One contact for your whole account</li>
+            </ul>
+            <a class="btn" href="mailto:hello@notera.example?subject=Bulk%20order" data-reveal="right" data-d="1">Ask
+              for
+              a bulk quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OUR CUSTOMERS' WORDS ============
+         SAMPLE REVIEWS: replace with real customer reviews before launch. -->
+    <section class="section section--paper" id="reviews">
+      <div class="wrap">
+        <div class="shead">
+          <span class="eyebrow eyebrow--blue" data-reveal="rotate">Stuck on us</span>
+          <h2 class="h1" data-split>Words from our customers</h2>
+        </div>
+        <div class="wall">
+          <figure class="note" data-reveal="swing"><span class="pin" aria-hidden="true"></span>
+            <p class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <blockquote>The clear notes changed how I revise. I annotate library books and peel everything off before
+              returning them.</blockquote>
+            <footer><b>Ananya R.</b>Transparent Task Sticky Notes</footer>
+          </figure>
+          <figure class="note note--pink" data-reveal="swing" data-d="1"><span class="pin" aria-hidden="true"></span>
+            <p class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <blockquote>They actually stay stuck. Our sprint board survived a full week next to an open window.
+            </blockquote>
+            <footer><b>Karthik M.</b>Sticky Note Swatches &ndash; Earl Grey, Ibiza &amp; Angora</footer>
+          </figure>
+          <figure class="note note--mint" data-reveal="swing" data-d="2"><span class="pin" aria-hidden="true"></span>
+            <p class="stars" aria-label="4 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+            <blockquote>The to-do pad lives on my fridge. Ten boxes is exactly the right amount of ambition for a day.
+            </blockquote>
+            <footer><b>Meera S.</b>Urgent Sticky Notes</footer>
+          </figure>
+          <figure class="note note--lavender" data-reveal="swing"><span class="pin" aria-hidden="true"></span>
+            <p class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <blockquote>Bought the gift set for my sister. She refuses to use them because the box is too pretty.
+            </blockquote>
+            <footer><b>Farhan A.</b>Square Sticky Notes &ndash; Desert Tortoiseshell</footer>
+          </figure>
+          <figure class="note note--blue" data-reveal="swing" data-d="1"><span class="pin" aria-hidden="true"></span>
+            <p class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <blockquote>Page flags in every textbook this semester. peeled clean off even after three months.
+            </blockquote>
+            <footer><b>Divya P.</b>Tab Sticky Notes &ndash; Santorini</footer>
+          </figure>
+          <figure class="note note--peach" data-reveal="swing" data-d="2"><span class="pin" aria-hidden="true"></span>
+            <p class="stars" aria-label="4 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+            <blockquote>Paper is thicker than the office-supply ones. My gel pen does not ghost through.</blockquote>
+            <footer><b>Rohan T.</b>Square Sticky Notes &ndash; Au Lait</footer>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ CUSTOMER SERVICE ============ -->
+    <section class="section section--tight" id="service">
+      <div class="wrap">
+        <ul class="service" data-stagger="pop">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 6h11v10H3zM14 10h4l3 3v3h-7z" />
+              <circle cx="7" cy="18" r="1.6" />
+              <circle cx="17" cy="18" r="1.6" />
+            </svg>
+            <div><b>Fast delivery</b><span>Ships in 1 working day. Free over &#8377;499.</span></div>
+          </li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 9h10a5 5 0 0 1 0 10H8" />
+              <path d="m8 5-4 4 4 4" />
+            </svg>
+            <div><b>Easy returns</b><span>14 days on unopened pads, replacements for damage.</span></div>
+          </li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 7v5l3 2" />
+            </svg>
+            <div><b>Support hours</b><span>Monday to Saturday, 10 am to 6 pm.</span></div>
+          </li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m3 7 9 6 9-6" />
+            </svg>
+            <div><b>Write to us</b><span><a class="link"
+                  href="mailto:hello@notera.example">hello@notera.example</a></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER: a pinboard of sticky notes ============ -->
+  <footer class="footer">
+    <div class="footer__edge" aria-hidden="true" data-index>
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="wrap">
+      <div class="footer__top">
+        <div>
+          <h2 class="h1" data-split>Shop with us</h2>
+          <p data-reveal>Notera makes sticky notes and nothing else: twenty pads in six collections, on FSC-certified
+            paper with an adhesive that lifts off clean. Leave your email to hear about sales and new colours first.</p>
+        </div>
+        <div data-reveal="right">
+          <form class="inline-form" data-newsletter novalidate>
+            <label class="sr-only" for="footer-email">Enter your email</label>
+            <input id="footer-email" type="email" name="email" placeholder="Enter your email" autocomplete="email"
+              required>
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+          <p class="form-note" data-newsletter-done hidden>Thanks. Your first note from us is on its way.</p>
+        </div>
+      </div>
+
+      <!-- Each column is a pinned note -->
+      <div class="board">
+        <nav class="note peel" aria-label="Quick links" data-reveal="swing">
+          <span class="pin" aria-hidden="true"></span>
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns &amp; Refunds</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="index.html#service">FAQs</a></li>
+          </ul>
+        </nav>
+        <nav class="note note--pink peel" aria-label="Explore" data-reveal="swing" data-d="1">
+          <span class="pin" aria-hidden="true"></span>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="shop.html">All sticky notes</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="account.html">My account</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+          </ul>
+        </nav>
+        <div class="note note--mint peel" data-reveal="swing" data-d="2">
+          <span class="pin" aria-hidden="true"></span>
+          <h3>Get in touch</h3>
+          <ul>
+            <li><a href="tel:+910000000000"><b>+91 00000 00000</b></a></li>
+            <li><a href="mailto:hello@notera.example">hello@notera.example</a></li>
+            <li>Monday to Saturday, 10 am to 6 pm</li>
+          </ul>
+        </div>
+        <div class="note note--lavender peel" data-reveal="swing" data-d="3">
+          <span class="pin" aria-hidden="true"></span>
+          <h3>Follow us</h3>
+          <div class="socials">
+            <a href="#" aria-label="Facebook">
+              <img src="images/icons/facebook.png" alt="Facebook" width="24" height="24">
+            </a>
+            <a href="#" aria-label="Instagram">
+              <img src="images/icons/insta.png" alt="Instagram" width="24" height="24">
+            </a>
+            <a href="#" aria-label="YouTube">
+              <img src="images/icons/youtube.png" alt="YouTube" width="24" height="24">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- The brand name as four notes: click one and it peels off -->
+      <div class="letters" role="img" aria-label="Notera" data-index>
+        <span class="letter" data-reveal="peelin">N</span>
+        <span class="letter" data-reveal="peelin" data-d="1">o</span>
+        <span class="letter" data-reveal="peelin" data-d="2">t</span>
+        <span class="letter" data-reveal="peelin" data-d="3">e</span>
+        <span class="letter" data-reveal="peelin" data-d="4">r</span>
+        <span class="letter" data-reveal="peelin" data-d="5">a</span>
+      </div>
+      <p class="letters__hint hand" aria-hidden="true">go on, peel one</p>
+
+      <div class="footer__base">
+        <p>&copy; 2026 Notera Paper Goods. Demo store: no real orders or payments are processed.</p>
+        <!-- <button class="text-btn" type="button" data-motion-toggle aria-pressed="false"><span data-off>Pause animations</span><span data-on>Play animations</span></button> -->
+        <ul class="pay" aria-label="Payment methods shown at checkout">
+          <li>Cards</li>
+          <li>UPI</li>
+          <li>Net banking</li>
+          <li>Wallets</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ OVERLAY + SIDE PANELS (same on every page) ============ -->
+  <div class="overlay"></div>
+
+  <!-- Cart drawer -->
+  <aside class="drawer" id="cart-drawer" data-panel role="dialog" aria-modal="true" aria-labelledby="cart-drawer-title"
+    aria-hidden="true">
+    <div class="drawer__head">
+      <h2 class="h3" id="cart-drawer-title">Your cart (<span data-sum="count">0</span>)</h2>
+      <button class="icon-btn" type="button" data-close aria-label="Close cart"><svg viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m6 6 12 12M18 6 6 18" />
+        </svg></button>
+    </div>
+    <div class="drawer__body">
+      <div class="empty" data-cart-empty>
+        <div class="note note--pink"><span class="hand">nothing yet</span></div>
+        <h3 class="h3">Your cart is empty</h3>
+        <p>Add a pad or two and they will show up here.</p>
+        <a class="btn btn--sm" href="shop.html">Shop sticky notes</a>
+      </div>
+      <div data-cart-filled hidden>
+        <div class="ship-meter">
+          <p data-ship-more>Add <b data-sum="remaining"></b> more to unlock free shipping.</p>
+          <p data-ship-done hidden>You have unlocked free shipping.</p>
+          <div class="ship-meter__bar"><i data-ship-bar></i></div>
+        </div>
+        <ul data-cart-list="tpl-cart-line" aria-label="Items in your cart"></ul>
+      </div>
+    </div>
+    <div class="drawer__foot" data-cart-filled hidden>
+      <p class="drawer__total"><span>Subtotal</span><span data-sum="subtotal"></span></p>
+      <p class="muted">Shipping and discounts are calculated at checkout.</p>
+      <div class="drawer__actions">
+        <a class="btn btn--ghost" href="cart.html">View cart</a>
+        <a class="btn" href="checkout.html">Checkout</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Wishlist drawer -->
+  <aside class="drawer" id="wishlist-drawer" data-panel role="dialog" aria-modal="true"
+    aria-labelledby="wish-drawer-title" aria-hidden="true">
+    <div class="drawer__head">
+      <h2 class="h3" id="wish-drawer-title">Wishlist</h2>
+      <button class="icon-btn" type="button" data-close aria-label="Close wishlist"><svg viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m6 6 12 12M18 6 6 18" />
+        </svg></button>
+    </div>
+    <div class="drawer__body">
+      <div class="empty" data-wish-empty>
+        <div class="note note--lavender"><span class="hand">save me for later</span></div>
+        <h3 class="h3">Your wishlist is waiting for a few good ideas.</h3>
+        <p>Tap the heart on any pad to save it here.</p>
+        <a class="btn btn--sm" href="shop.html">Explore sticky notes</a>
+      </div>
+      <ul data-wish-list="tpl-wish-line" data-wish-filled hidden aria-label="Saved items"></ul>
+    </div>
+    <div class="drawer__foot" data-wish-filled hidden>
+      <a class="btn btn--ghost" href="wishlist.html">View wishlist</a>
+    </div>
+  </aside>
+
+  <!-- Search -->
+  <div class="sheet" id="search-panel" data-panel role="dialog" aria-modal="true" aria-label="Search"
+    aria-hidden="true">
+    <div class="sheet__head">
+      <p class="label">Search the shop</p>
+      <button class="icon-btn" type="button" data-close aria-label="Close search"><svg viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m6 6 12 12M18 6 6 18" />
+        </svg></button>
+    </div>
+    <form class="search-form" action="shop.html" method="get" role="search">
+      <label class="sr-only" for="site-search">Search sticky notes</label>
+      <input id="site-search" type="search" name="q" placeholder="Try grid, pastel, flags" autocomplete="off"
+        data-autofocus>
+      <button class="btn" type="submit">Search</button>
+    </form>
+    <div class="chips">
+      <a class="chip" href="shop.html?q=pastel">Pastel</a>
+      <a class="chip" href="shop.html?q=clear">Transparent</a>
+      <a class="chip" href="shop.html?q=grid">Grid</a>
+      <a class="chip" href="shop.html?q=flag">Page flags</a>
+      <a class="chip" href="shop.html?q=to-do">To-do pads</a>
+      <a class="chip" href="shop.html?q=neon">Neon</a>
+    </div>
+  </div>
+
+  <!-- Mobile menu (side drawer) -->
+  <aside class="drawer menu" id="mobile-menu" data-panel role="dialog" aria-modal="true" aria-label="Menu"
+    aria-hidden="true">
+    <div class="drawer__head">
+      <img src="images/logo/notera-logo.png" alt="Notera" width="92" height="30">
+      <button class="icon-btn" type="button" data-close aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m6 6 12 12M18 6 6 18" />
+        </svg></button>
+    </div>
+    <div class="drawer__body">
+      <nav class="menu__links" aria-label="Mobile">
+        <a href="shop.html">Shop</a>
+        <details>
+          <summary>Categories <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6" />
+            </svg></summary>
+          <ul>
+            <li><a href="shop.html?collection=Pastel">Pastel</a></li>
+            <li><a href="shop.html?collection=Study">Study</a></li>
+            <li><a href="shop.html?collection=Office">Office</a></li>
+            <li><a href="shop.html?collection=Planner">Planner</a></li>
+            <li><a href="shop.html?collection=Transparent">Transparent</a></li>
+            <li><a href="shop.html?collection=Color%20Pop">Color Pop</a></li>
+            <li><a href="shop.html?shape=Flag">Page flags</a></li>
+            <li><a href="shop.html?shape=Shaped">Shaped notes</a></li>
+            <li><a href="shop.html?size=Mini">Mini notes</a></li>
+            <li><a href="shop.html?size=Large">Large notes</a></li>
+          </ul>
+        </details>
+        <a href="journal.html">Journal</a>
+        <a href="index.html#about">About</a>
+        <a href="account.html">Account</a>
+      </nav>
+    </div>
+    <div class="drawer__foot">
+      <div class="menu__tools">
+        <button type="button" data-open="search-panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.5-3.5" />
+          </svg><span>Search</span></button>
+        <button type="button" data-open="wishlist-drawer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+          </svg><span>Wishlist</span></button>
+        <button type="button" data-open="cart-drawer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 8h14l-1 12H6L5 8Z" />
+            <path d="M9 8V7a3 3 0 0 1 6 0v1" />
+          </svg><span>Cart (<span data-sum="count">0</span>)</span></button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Back to top -->
+  <button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M4 12h15m-6-6 6 6-6 6" />
+    </svg></button>
+
+  <!-- Toast messages: edit the wording here -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span data-toast="cart-add" hidden>Added to cart</span>
+    <span data-toast="cart-remove" hidden>Removed from cart</span>
+    <span data-toast="wish-add" hidden>Saved to wishlist</span>
+    <span data-toast="wish-remove" hidden>Removed from wishlist</span>
+    <span data-toast="newsletter" hidden>You are subscribed</span>
+    <span data-toast="saved" hidden>Saved</span>
+    <span data-toast="copied" hidden>Code copied</span>
+    <span data-toast="fix-form" hidden>Please check the highlighted fields</span>
+    <span data-toast="offline" hidden>Could not reach the store. Please try again.</span>
+    <span data-toast="stock" hidden>Sorry, there is not enough stock. Your cart was updated.</span>
+    <span data-toast="review" hidden>Thanks for your review</span>
+  </div>
+
+  <!-- Templates: the markup JS copies for each cart / wishlist item -->
+  <template id="tpl-cart-line">
+    <li class="line">
+      <a class="line__img" data-f-href="href"><img data-f-src="image" data-f-alt="name" alt="" width="168"
+          height="168"></a>
+      <div>
+        <a class="line__name" data-f="name" data-f-href="href"></a>
+        <p class="line__meta" data-f="variant"></p>
+        <div class="line__tools">
+          <div class="qty">
+            <button type="button" data-step="-1" aria-label="Decrease quantity of" data-f-label="name">&minus;</button>
+            <output data-f="qty" aria-live="polite"></output>
+            <button type="button" data-step="1" aria-label="Increase quantity of" data-f-label="name">+</button>
+          </div>
+          <button class="text-btn" type="button" data-remove-cart aria-label="Remove"
+            data-f-label="name">Remove</button>
+        </div>
+      </div>
+      <p class="line__price" data-f="price"></p>
+    </li>
+  </template>
+
+  <template id="tpl-wish-line">
+    <li class="line">
+      <a class="line__img" data-f-href="href"><img data-f-src="image" data-f-alt="name" alt="" width="168"
+          height="168"></a>
+      <div>
+        <a class="line__name" data-f="name" data-f-href="href"></a>
+        <p class="line__meta"><span class="in-stock" data-if="in">In stock</span><span class="sold-out"
+            data-if="out">Sold out</span></p>
+        <div class="line__tools">
+          <button class="btn btn--sm" type="button" data-wish-to-cart>Move to cart</button>
+          <button class="text-btn" type="button" data-remove-wish aria-label="Remove"
+            data-f-label="name">Remove</button>
+        </div>
+      </div>
+      <p class="line__price" data-f="price"></p>
+    </li>
+  </template>
+
+  <!-- JavaScript: behaviour only. All text and images are in this HTML file. -->
+  <script src="js/main.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/wishlist.js" defer></script>
+  <script src="js/products.js" defer></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/checkout.js" defer></script>
+</body>
+
+</html>

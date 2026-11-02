@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184 60" role="img" aria-label="Peel">
+  <path d="M4 6h46v34L36 54H4z" fill="#ffe46b" stroke="#1d1a3a" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M50 40H36v14z" fill="#fffdf8" stroke="#1d1a3a" stroke-width="3" stroke-linejoin="round"/>
+  <text x="64" y="44" font-family="'Bricolage Grotesque','Avenir Next','Segoe UI',Arial,sans-serif" font-size="44" font-weight="800" letter-spacing="-2" fill="#1d1a3a">peel</text>
+</svg>

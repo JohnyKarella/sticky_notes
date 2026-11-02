@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" data-currency="&#8377;" data-locale="en-IN" data-api="/api">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout | Notera</title>
+  <meta name="description" content="Enter your delivery details and choose a payment method to complete your Notera order.">
+  <meta name="theme-color" content="#ffe46b">
+  <link rel="icon" href="images/icons/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-brand="Notera" data-free-shipping-over="499" data-shipping-fee="49" data-free-label="Free" data-order-prefix="PL-">
+  <!-- Page transition cover -->
+  <div class="veil" aria-hidden="true"><img src="images/logo/notera-logo.png" alt="" width="184" height="60"></div>
+  <div class="progress" aria-hidden="true"></div>
+  <!-- A few floating background objects at the page sides (decoration only) -->
+  <div class="bg-notes" aria-hidden="true"><span class="bgn bgn--l"></span><span class="bgn bgn--r"></span><span class="bgn bgn--dot bgn--l"></span><span class="bgn bgn--ring bgn--r"></span></div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <!-- Announcement bar: each <p> is one rotating message -->
+    <div class="announce" role="region" aria-label="Announcements">
+      <p class="is-on">Free delivery on orders over &#8377;499</p>
+      <p>Use code STICKY10 for 10% off your first pads</p>
+      <p>Orders ship within 1 working day, all over India</p>
+    </div>
+    <div class="header__bar">
+      <a class="logo" href="index.html" aria-label="Notera home"><img src="images/logo/notera-logo.png" alt="Notera" width="92" height="30"></a>
+      <nav class="nav" aria-label="Main">
+        <a class="nav__link" href="shop.html">Shop</a>
+        <!-- Categories dropdown -->
+        <div class="nav__item">
+          <button class="nav__link" type="button" aria-expanded="false" aria-controls="mega">Categories <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="mega" id="mega">
+            <div>
+              <h3>Collections</h3>
+              <div class="mega__cols">
+              <a class="mega__thumb" href="shop.html?collection=Pastel"><img src="images/categories/pastel.jpg" alt="" width="104" height="104" loading="lazy">Pastel</a>
+              <a class="mega__thumb" href="shop.html?collection=Study"><img src="images/categories/study.jpg" alt="" width="104" height="104" loading="lazy">Study</a>
+              <a class="mega__thumb" href="shop.html?collection=Office"><img src="images/categories/office.jpg" alt="" width="104" height="104" loading="lazy">Office</a>
+              <a class="mega__thumb" href="shop.html?collection=Planner"><img src="images/categories/planner.jpg" alt="" width="104" height="104" loading="lazy">Planner</a>
+              <a class="mega__thumb" href="shop.html?collection=Transparent"><img src="images/categories/transparent.jpg" alt="" width="104" height="104" loading="lazy">Transparent</a>
+              <a class="mega__thumb" href="shop.html?collection=Color%20Pop"><img src="images/categories/color-pop.jpg" alt="" width="104" height="104" loading="lazy">Color Pop</a>
+              </div>
+            </div>
+            <div>
+              <h3>By type</h3>
+              <ul>
+              <li><a class="mega__link" href="shop.html?q=classic">Classic squares</a></li>
+              <li><a class="mega__link" href="shop.html?q=pastel">Pastel notes</a></li>
+              <li><a class="mega__link" href="shop.html?q=neon">Neon notes</a></li>
+              <li><a class="mega__link" href="shop.html?q=clear">Transparent notes</a></li>
+              <li><a class="mega__link" href="shop.html?q=grid">Grid notes</a></li>
+              <li><a class="mega__link" href="shop.html?q=lined">Lined notes</a></li>
+              <li><a class="mega__link" href="shop.html?q=to-do">To-do pads</a></li>
+              <li><a class="mega__link" href="shop.html?shape=Flag">Page flags</a></li>
+              <li><a class="mega__link" href="shop.html?shape=Shaped">Shaped notes</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>By size</h3>
+              <ul>
+                <li><a class="mega__link" href="shop.html?size=Mini">Mini, 51 x 38 mm</a></li>
+                <li><a class="mega__link" href="shop.html?size=Standard">Standard, 76 x 76 mm</a></li>
+                <li><a class="mega__link" href="shop.html?size=Large">Large, 101 x 101 mm</a></li>
+              </ul>
+              <h3 data-gap>By budget</h3>
+              <ul>
+                <li><a class="mega__link" href="shop.html?max=150">Under &#8377;150</a></li>
+                <li><a class="mega__link" href="shop.html?max=200">Under &#8377;200</a></li>
+                <li><a class="mega__link" href="shop.html?max=300">Under &#8377;300</a></li>
+              </ul>
+            </div>
+            <a class="mega__feature tint-yellow" href="product.html?id=p17">
+              <img src="images/products/sticky-note-swatches-earl-grey-ibiza-angora-01.jpg" alt="Sticky Note Swatches &ndash; Earl Grey, Ibiza &amp; Angora" width="600" height="600" loading="lazy">
+              <span>Sticky Note Swatches<small>Earl Grey, Ibiza &amp; Angora, &#8377;349</small></span>
+            </a>
+          </div>
+        </div>
+        <a class="nav__link" href="journal.html">Journal</a>
+        <a class="nav__link" href="index.html#about">About</a>
+      </nav>
+      <div class="header__tools">
+        <button class="icon-btn" type="button" data-open="search-panel" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+        <a class="icon-btn hide-xs" href="account.html" aria-label="Account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></a>
+        <button class="icon-btn" type="button" data-open="wishlist-drawer" aria-label="Open wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg><span class="count" data-wish-count hidden>0</span></button>
+        <button class="icon-btn" type="button" data-open="cart-drawer" aria-label="Open cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V7a3 3 0 0 1 6 0v1"/></svg><span class="count" data-cart-count hidden>0</span></button>
+        <button class="icon-btn menu-btn" type="button" data-open="mobile-menu" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M4 8h16M4 16h16"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-top">
+      <div class="wrap">
+        <div class="page-title"><h1 class="h1" data-split>Checkout</h1></div>
+
+        <div class="empty" data-cart-empty>
+          <div class="note note--pink"><span class="hand">nothing to pay for</span></div>
+          <h2 class="h2">Your cart is empty</h2>
+          <p>Add some sticky notes before checking out.</p>
+          <a class="btn" href="shop.html">Shop sticky notes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+        </div>
+
+        <div class="split" data-cart-filled hidden>
+          <div>
+            <!-- New or returning customer -->
+            <div class="panel" data-checkout-modes>
+              <h2 class="h3">How would you like to check out?</h2>
+              <div class="tiles tiles--row" role="radiogroup" aria-label="Checkout options">
+                <label class="tile"><input type="radio" name="mode" value="guest" checked><span><b>Continue as guest</b><small>No account needed</small></span></label>
+                <label class="tile"><input type="radio" name="mode" value="create"><span><b>Create account</b><small>Track orders, save addresses</small></span></label>
+                <label class="tile"><input type="radio" name="mode" value="signin"><span><b>Sign in</b><small>I already have an account</small></span></label>
+              </div>
+            </div>
+
+            <div class="panel" data-signed-in hidden>
+              <div class="signed-in">
+                <p>Signed in as <b data-f="name"></b> (<span data-f="email"></span>)</p>
+                <button class="text-btn" type="button" data-logout>Log out</button>
+              </div>
+            </div>
+
+            <!-- Existing customer sign in -->
+            <form class="panel" id="checkout-signin" novalidate hidden>
+              <h2 class="h3">Sign in to continue</h2>
+              <p class="form-error" data-form-error hidden>That email and password do not match an account on this device.</p>
+              <div class="form-grid">
+                <div class="field">
+            <label for="co-email">Email</label>
+            <input class="input" id="co-email" name="email" type="email" required autocomplete="email">
+            <p class="field-error" hidden>Enter a valid email address.</p>
+          </div>
+                <div class="field">
+            <label for="co-password">Password</label>
+            <input class="input" id="co-password" name="password" type="password" required autocomplete="current-password">
+            <p class="field-error" hidden>Enter your password.</p>
+          </div>
+              </div>
+              <div class="form-row" data-gap>
+                <label class="check"><input type="checkbox" name="remember" checked> Remember me</label>
+                <a class="link" href="signin.html">Forgot password?</a>
+              </div>
+              <button class="btn" type="submit" data-gap>Sign in</button>
+            </form>
+
+            <form id="checkout-form" novalidate>
+              <div class="panel">
+                <h2 class="h3">Customer information</h2>
+                <div class="form-grid">
+                  <div class="field">
+            <label for="firstName">First name</label>
+            <input class="input" id="firstName" name="firstName" type="text" required autocomplete="given-name">
+            <p class="field-error" hidden>Enter this to continue.</p>
+          </div>
+                  <div class="field">
+            <label for="lastName">Last name</label>
+            <input class="input" id="lastName" name="lastName" type="text" required autocomplete="family-name">
+            <p class="field-error" hidden>Enter this to continue.</p>
+          </div>
+                  <div class="field">
+            <label for="email">Email</label>
+            <input class="input" id="email" name="email" type="email" required autocomplete="email">
+            <p class="field-error" hidden>Enter a valid email address, like name@example.com.</p>
+          </div>
+                  <div class="field">
+            <label for="phone">Phone</label>
+            <input class="input" id="phone" name="phone" type="tel" required autocomplete="tel" pattern="[0-9+ ]{10,14}" inputmode="tel">
+            <p class="field-error" hidden>Enter a 10-digit mobile number.</p>
+          </div>
+                </div>
+                <div data-create-fields hidden>
+                  <div class="form-grid" data-gap>
+                    <div class="field span-2">
+            <label for="newPassword">Create a password</label>
+            <input class="input" id="newPassword" name="newPassword" type="password" required autocomplete="new-password" minlength="8">
+            <p class="field-error" hidden>Use at least 8 characters.</p>
+          </div>
+                  </div>
+                  <p class="form-error" data-account-error hidden data-gap>An account with this email already exists. Choose Sign in above instead.</p>
+                </div>
+              </div>
+
+              <div class="panel">
+                <h2 class="h3">Shipping address</h2>
+                <div class="form-grid">
+                  <div class="field span-2">
+            <label for="address">Address</label>
+            <input class="input" id="address" name="address" type="text" required autocomplete="street-address">
+            <p class="field-error" hidden>Enter your house number and street.</p>
+          </div>
+                  <div class="field">
+            <label for="city">City</label>
+            <input class="input" id="city" name="city" type="text" required autocomplete="address-level2">
+            <p class="field-error" hidden>Enter this to continue.</p>
+          </div>
+                  <div class="field">
+            <label for="state">State</label>
+            <input class="input" id="state" name="state" type="text" required autocomplete="address-level1">
+            <p class="field-error" hidden>Enter this to continue.</p>
+          </div>
+                  <div class="field">
+            <label for="pin">PIN code</label>
+            <input class="input" id="pin" name="pin" type="text" required autocomplete="postal-code" pattern="[0-9]{6}" inputmode="numeric">
+            <p class="field-error" hidden>Enter a 6-digit PIN code.</p>
+          </div>
+                  <div class="field">
+                    <label for="country">Country</label>
+                    <select class="select" id="country" name="country" autocomplete="country-name"><option>India</option></select>
+                  </div>
+                </div>
+                <label class="check" data-gap><input type="checkbox" name="saveAddress"> Save this address to my account</label>
+              </div>
+
+              <div class="panel">
+                <h2 class="h3">Delivery method</h2>
+                <!-- data-fee="auto" uses the free-shipping rule set on <body>. data-days sets the delivery estimate. -->
+                <div class="tiles">
+                  <label class="tile"><input type="radio" name="delivery" value="standard" data-fee="auto" data-days="5" data-label="Standard delivery" checked><span><b>Standard delivery</b><small>3 to 5 working days</small></span><span class="end">&#8377;49, free over &#8377;499</span></label>
+                  <label class="tile"><input type="radio" name="delivery" value="express" data-fee="99" data-days="2" data-label="Express delivery"><span><b>Express delivery</b><small>1 to 2 working days</small></span><span class="end">&#8377;99</span></label>
+                </div>
+              </div>
+
+              <div class="panel">
+                <h2 class="h3">Payment method</h2>
+                <div class="tiles tiles--row">
+                  <label class="tile"><input type="radio" name="payment" data-pay="card" data-label="Credit card" checked><b>Credit card</b></label>
+                  <label class="tile"><input type="radio" name="payment" data-pay="card" data-label="Debit card"><b>Debit card</b></label>
+                  <label class="tile"><input type="radio" name="payment" data-pay="upi" data-label="UPI"><b>UPI</b></label>
+                  <label class="tile"><input type="radio" name="payment" data-pay="bank" data-label="Net banking"><b>Net banking</b></label>
+                  <label class="tile"><input type="radio" name="payment" data-pay="wallet" data-label="Wallet"><b>Wallet</b></label>
+                </div>
+
+                <div class="pay-panel form-grid" data-pay-panel="card">
+                  <div class="field span-2">
+            <label for="cardNumber">Card number</label>
+            <input class="input" id="cardNumber" name="cardNumber" type="text" required autocomplete="cc-number" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" inputmode="numeric" placeholder="0000 0000 0000 0000">
+            <p class="field-error" hidden>Enter the 16-digit card number.</p>
+          </div>
+                  <div class="field span-2">
+            <label for="cardName">Name on card</label>
+            <input class="input" id="cardName" name="cardName" type="text" required autocomplete="cc-name">
+            <p class="field-error" hidden>Enter this to continue.</p>
+          </div>
+                  <div class="field">
+            <label for="cardExpiry">Expiry (MM/YY)</label>
+            <input class="input" id="cardExpiry" name="cardExpiry" type="text" required autocomplete="cc-exp" pattern="(0[1-9]|1[0-2])/[0-9]{2}" inputmode="numeric" placeholder="MM/YY">
+            <p class="field-error" hidden>Enter the expiry as MM/YY.</p>
+          </div>
+                  <div class="field">
+            <label for="cardCvv">CVV</label>
+            <input class="input" id="cardCvv" name="cardCvv" type="password" required autocomplete="cc-csc" pattern="[0-9]{3,4}" inputmode="numeric">
+            <p class="field-error" hidden>Enter the 3 or 4 digit code.</p>
+          </div>
+                </div>
+                <div class="pay-panel" data-pay-panel="upi" hidden>
+                  <div class="field">
+            <label for="upiId">UPI ID</label>
+            <input class="input" id="upiId" name="upiId" type="text" required pattern="[A-Za-z0-9._-]{2,}@[A-Za-z]{2,}" placeholder="name@bank">
+            <p class="field-error" hidden>Enter a UPI ID, like name@bank.</p>
+          </div>
+                </div>
+                <div class="pay-panel" data-pay-panel="bank" hidden>
+                  <div class="field">
+                    <label for="bank">Choose your bank</label>
+                    <select class="select" id="bank" name="bank" required>
+                      <option value="">Select a bank</option>
+                      <option>State Bank of India</option><option>HDFC Bank</option><option>ICICI Bank</option><option>Axis Bank</option><option>Kotak Mahindra Bank</option>
+                    </select>
+                    <p class="field-error" hidden>Choose a bank to continue.</p>
+                  </div>
+                </div>
+                <div class="pay-panel" data-pay-panel="wallet" hidden>
+                  <div class="field">
+                    <label for="wallet">Choose your wallet</label>
+                    <select class="select" id="wallet" name="wallet" required>
+                      <option value="">Select a wallet</option>
+                      <option>Paytm</option><option>PhonePe</option><option>Amazon Pay</option><option>MobiKwik</option>
+                    </select>
+                    <p class="field-error" hidden>Choose a wallet to continue.</p>
+                  </div>
+                </div>
+                <p class="demo-note">Demo checkout: no payment gateway is connected and no money is taken. Do not enter real card details.</p>
+              </div>
+
+              <button class="btn btn--block" type="submit" data-gap><span data-pay-idle>Pay <span data-sum="total"></span> and place order</span><span data-pay-busy hidden>Processing payment</span></button>
+            </form>
+          </div>
+
+          <aside class="summary" aria-labelledby="co-summary-title">
+            <h2 class="h3" id="co-summary-title">Order summary</h2>
+            <ul data-cart-list="tpl-summary-line"></ul>
+            <dl>
+              <div><dt>Subtotal</dt><dd data-sum="subtotal"></dd></div>
+              <div data-discount-row hidden><dt>Discount</dt><dd data-sum="discount"></dd></div>
+              <div><dt>Shipping</dt><dd data-sum="shipping"></dd></div>
+              <div class="total"><dt>Total</dt><dd data-sum="total"></dd></div>
+            </dl>
+            <a class="link" href="cart.html">Edit cart</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER: a pinboard of sticky notes ============ -->
+  <footer class="footer">
+    <div class="footer__edge" aria-hidden="true" data-index><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="wrap">
+      <div class="footer__top">
+        <div>
+          <h2 class="h1" data-split>Shop with us</h2>
+          <p data-reveal>Notera makes sticky notes and nothing else: twenty pads in six collections, on FSC-certified paper with an adhesive that lifts off clean. Leave your email to hear about sales and new colours first.</p>
+        </div>
+        <div data-reveal="right">
+          <form class="inline-form" data-newsletter novalidate>
+            <label class="sr-only" for="footer-email">Enter your email</label>
+            <input id="footer-email" type="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+          <p class="form-note" data-newsletter-done hidden>Thanks. Your first note from us is on its way.</p>
+        </div>
+      </div>
+
+      <!-- Each column is a pinned note -->
+      <div class="board">
+        <nav class="note peel" aria-label="Quick links" data-reveal="swing">
+          <span class="pin" aria-hidden="true"></span>
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns &amp; Refunds</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="index.html#service">FAQs</a></li>
+          </ul>
+        </nav>
+        <nav class="note note--pink peel" aria-label="Explore" data-reveal="swing" data-d="1">
+          <span class="pin" aria-hidden="true"></span>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="shop.html">All sticky notes</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="account.html">My account</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+          </ul>
+        </nav>
+        <div class="note note--mint peel" data-reveal="swing" data-d="2">
+          <span class="pin" aria-hidden="true"></span>
+          <h3>Get in touch</h3>
+          <ul>
+            <li><a href="tel:+910000000000"><b>+91 00000 00000</b></a></li>
+            <li><a href="mailto:hello@notera.example">hello@notera.example</a></li>
+            <li>Monday to Saturday, 10 am to 6 pm</li>
+          </ul>
+        </div>
+        <div class="note note--lavender peel" data-reveal="swing" data-d="3">
+          <span class="pin" aria-hidden="true"></span>
+          <h3>Follow us</h3>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="12" cy="12" r="9"/><path d="M13 20v-7h2.500M13 13h-2.500M13 13v-2.500c0-1.200.8-2 2-2h1"/></svg></a>
+            <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="12" cy="12" r="9"/><path d="M11 7.5c3-.8 5 1 4.5 3.5-.4 2-2.300 3-3.800 2M12 9.500 10 19"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.7" cy="7.3" r=".6" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 10.500V16M8 8v.1M11.500 16v-5.500M11.500 13c0-1.500 1-2.500 2.300-2.500s2.200 1 2.200 2.500v3"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="3" y="6" width="18" height="12" rx="4"/><path d="m10.500 9.500 4 2.500-4 2.500Z" fill="currentColor"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- The brand name as four notes: click one and it peels off -->
+      <div class="letters" role="img" aria-label="Notera" data-index>
+        <span class="letter" data-reveal="peelin">N</span>
+        <span class="letter" data-reveal="peelin" data-d="1">o</span>
+        <span class="letter" data-reveal="peelin" data-d="2">t</span>
+        <span class="letter" data-reveal="peelin" data-d="3">e</span>
+        <span class="letter" data-reveal="peelin" data-d="4">r</span>
+        <span class="letter" data-reveal="peelin" data-d="5">a</span>
+      </div>
+      <p class="letters__hint hand" aria-hidden="true">go on, peel one</p>
+
+      <div class="footer__base">
+        <p>&copy; 2026 Notera Paper Goods. Demo store: no real orders or payments are processed.</p>
+        <button class="text-btn" type="button" data-motion-toggle aria-pressed="false"><span data-off>Pause animations</span><span data-on>Play animations</span></button>
+        <ul class="pay" aria-label="Payment methods shown at checkout">
+          <li>Cards</li><li>UPI</li><li>Net banking</li><li>Wallets</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <template id="tpl-summary-line">
+    <li class="line">
+      <span class="line__img"><img data-f-src="image" data-f-alt="name" alt="" width="120" height="120"></span>
+      <div><p class="line__name" data-f="name"></p><p class="line__meta"><span data-f="variant"></span>, qty <span data-f="qty"></span></p></div>
+      <p class="line__price" data-f="price"></p>
+    </li>
+  </template>
+
+  <!-- ============ OVERLAY + SIDE PANELS (same on every page) ============ -->
+  <div class="overlay"></div>
+
+  <!-- Cart drawer -->
+  <aside class="drawer" id="cart-drawer" data-panel role="dialog" aria-modal="true" aria-labelledby="cart-drawer-title" aria-hidden="true">
+    <div class="drawer__head">
+      <h2 class="h3" id="cart-drawer-title">Your cart (<span data-sum="count">0</span>)</h2>
+      <button class="icon-btn" type="button" data-close aria-label="Close cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="drawer__body">
+      <div class="empty" data-cart-empty>
+        <div class="note note--pink"><span class="hand">nothing yet</span></div>
+        <h3 class="h3">Your cart is empty</h3>
+        <p>Add a pad or two and they will show up here.</p>
+        <a class="btn btn--sm" href="shop.html">Shop sticky notes</a>
+      </div>
+      <div data-cart-filled hidden>
+        <div class="ship-meter">
+          <p data-ship-more>Add <b data-sum="remaining"></b> more to unlock free shipping.</p>
+          <p data-ship-done hidden>You have unlocked free shipping.</p>
+          <div class="ship-meter__bar"><i data-ship-bar></i></div>
+        </div>
+        <ul data-cart-list="tpl-cart-line" aria-label="Items in your cart"></ul>
+      </div>
+    </div>
+    <div class="drawer__foot" data-cart-filled hidden>
+      <p class="drawer__total"><span>Subtotal</span><span data-sum="subtotal"></span></p>
+      <p class="muted">Shipping and discounts are calculated at checkout.</p>
+      <div class="drawer__actions">
+        <a class="btn btn--ghost" href="cart.html">View cart</a>
+        <a class="btn" href="checkout.html">Checkout</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Wishlist drawer -->
+  <aside class="drawer" id="wishlist-drawer" data-panel role="dialog" aria-modal="true" aria-labelledby="wish-drawer-title" aria-hidden="true">
+    <div class="drawer__head">
+      <h2 class="h3" id="wish-drawer-title">Wishlist</h2>
+      <button class="icon-btn" type="button" data-close aria-label="Close wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="drawer__body">
+      <div class="empty" data-wish-empty>
+        <div class="note note--lavender"><span class="hand">save me for later</span></div>
+        <h3 class="h3">Your wishlist is waiting for a few good ideas.</h3>
+        <p>Tap the heart on any pad to save it here.</p>
+        <a class="btn btn--sm" href="shop.html">Explore sticky notes</a>
+      </div>
+      <ul data-wish-list="tpl-wish-line" data-wish-filled hidden aria-label="Saved items"></ul>
+    </div>
+    <div class="drawer__foot" data-wish-filled hidden>
+      <a class="btn btn--ghost" href="wishlist.html">View wishlist</a>
+    </div>
+  </aside>
+
+  <!-- Search -->
+  <div class="sheet" id="search-panel" data-panel role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+    <div class="sheet__head">
+      <p class="label">Search the shop</p>
+      <button class="icon-btn" type="button" data-close aria-label="Close search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    </div>
+    <form class="search-form" action="shop.html" method="get" role="search">
+      <label class="sr-only" for="site-search">Search sticky notes</label>
+      <input id="site-search" type="search" name="q" placeholder="Try grid, pastel, flags" autocomplete="off" data-autofocus>
+      <button class="btn" type="submit">Search</button>
+    </form>
+    <div class="chips">
+      <a class="chip" href="shop.html?q=pastel">Pastel</a>
+      <a class="chip" href="shop.html?q=clear">Transparent</a>
+      <a class="chip" href="shop.html?q=grid">Grid</a>
+      <a class="chip" href="shop.html?q=flag">Page flags</a>
+      <a class="chip" href="shop.html?q=to-do">To-do pads</a>
+      <a class="chip" href="shop.html?q=neon">Neon</a>
+    </div>
+  </div>
+
+  <!-- Mobile menu (side drawer) -->
+  <aside class="drawer menu" id="mobile-menu" data-panel role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="true">
+    <div class="drawer__head">
+      <img src="images/logo/notera-logo.png" alt="Notera" width="92" height="30">
+      <button class="icon-btn" type="button" data-close aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="drawer__body">
+      <nav class="menu__links" aria-label="Mobile">
+        <a href="shop.html">Shop</a>
+        <details>
+        <summary>Categories <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="m6 9 6 6 6-6"/></svg></summary>
+        <ul>
+          <li><a href="shop.html?collection=Pastel">Pastel</a></li>
+          <li><a href="shop.html?collection=Study">Study</a></li>
+          <li><a href="shop.html?collection=Office">Office</a></li>
+          <li><a href="shop.html?collection=Planner">Planner</a></li>
+          <li><a href="shop.html?collection=Transparent">Transparent</a></li>
+          <li><a href="shop.html?collection=Color%20Pop">Color Pop</a></li>
+          <li><a href="shop.html?shape=Flag">Page flags</a></li>
+          <li><a href="shop.html?shape=Shaped">Shaped notes</a></li>
+          <li><a href="shop.html?size=Mini">Mini notes</a></li>
+          <li><a href="shop.html?size=Large">Large notes</a></li>
+        </ul>
+      </details>
+        <a href="journal.html">Journal</a>
+        <a href="index.html#about">About</a>
+        <a href="account.html">Account</a>
+      </nav>
+    </div>
+    <div class="drawer__foot">
+      <div class="menu__tools">
+        <button type="button" data-open="search-panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Search</span></button>
+        <button type="button" data-open="wishlist-drawer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg><span>Wishlist</span></button>
+        <button type="button" data-open="cart-drawer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V7a3 3 0 0 1 6 0v1"/></svg><span>Cart (<span data-sum="count">0</span>)</span></button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Back to top -->
+  <button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M4 12h15m-6-6 6 6-6 6"/></svg></button>
+
+  <!-- Toast messages: edit the wording here -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span data-toast="cart-add" hidden>Added to cart</span>
+    <span data-toast="cart-remove" hidden>Removed from cart</span>
+    <span data-toast="wish-add" hidden>Saved to wishlist</span>
+    <span data-toast="wish-remove" hidden>Removed from wishlist</span>
+    <span data-toast="newsletter" hidden>You are subscribed</span>
+    <span data-toast="saved" hidden>Saved</span>
+    <span data-toast="copied" hidden>Code copied</span>
+    <span data-toast="fix-form" hidden>Please check the highlighted fields</span>
+    <span data-toast="offline" hidden>Could not reach the store. Please try again.</span>
+    <span data-toast="stock" hidden>Sorry, there is not enough stock. Your cart was updated.</span>
+    <span data-toast="review" hidden>Thanks for your review</span>
+  </div>
+
+  <!-- Templates: the markup JS copies for each cart / wishlist item -->
+  <template id="tpl-cart-line">
+    <li class="line">
+      <a class="line__img" data-f-href="href"><img data-f-src="image" data-f-alt="name" alt="" width="168" height="168"></a>
+      <div>
+        <a class="line__name" data-f="name" data-f-href="href"></a>
+        <p class="line__meta" data-f="variant"></p>
+        <div class="line__tools">
+          <div class="qty">
+            <button type="button" data-step="-1" aria-label="Decrease quantity of" data-f-label="name">&minus;</button>
+            <output data-f="qty" aria-live="polite"></output>
+            <button type="button" data-step="1" aria-label="Increase quantity of" data-f-label="name">+</button>
+          </div>
+          <button class="text-btn" type="button" data-remove-cart aria-label="Remove" data-f-label="name">Remove</button>
+        </div>
+      </div>
+      <p class="line__price" data-f="price"></p>
+    </li>
+  </template>
+
+  <template id="tpl-wish-line">
+    <li class="line">
+      <a class="line__img" data-f-href="href"><img data-f-src="image" data-f-alt="name" alt="" width="168" height="168"></a>
+      <div>
+        <a class="line__name" data-f="name" data-f-href="href"></a>
+        <p class="line__meta"><span class="in-stock" data-if="in">In stock</span><span class="sold-out" data-if="out">Sold out</span></p>
+        <div class="line__tools">
+          <button class="btn btn--sm" type="button" data-wish-to-cart>Move to cart</button>
+          <button class="text-btn" type="button" data-remove-wish aria-label="Remove" data-f-label="name">Remove</button>
+        </div>
+      </div>
+      <p class="line__price" data-f="price"></p>
+    </li>
+  </template>
+
+  <!-- JavaScript: behaviour only. All text and images are in this HTML file. -->
+  <script src="js/main.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/wishlist.js" defer></script>
+  <script src="js/products.js" defer></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/checkout.js" defer></script>
+</body>
+</html>

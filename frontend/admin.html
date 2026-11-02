@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-currency="&#8377;" data-locale="en-IN" data-api="/api">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Store admin | Notera</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#ffe46b">
+  <link rel="icon" href="images/icons/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-brand="Notera" data-free-label="Free">
+  <main id="main" class="wrap">
+    <header class="admin-head">
+      <a href="index.html" aria-label="Notera home"><img src="images/logo/notera-logo.png" alt="Notera" width="184" height="60"></a>
+      <div>
+        <span class="muted" data-admin-who></span>
+        <a class="btn btn--sm btn--ghost" href="index.html">View store</a>
+        <button class="btn btn--sm" type="button" data-logout data-admin-only hidden>Sign out</button>
+      </div>
+    </header>
+
+    <!-- Shown when nobody (or a customer) is signed in -->
+    <section class="panel admin-login" data-admin-gate hidden>
+      <h1 class="h2">Admin sign in</h1>
+      <p class="muted">Sign in with the admin username and password to manage orders, products, customers and promo codes.</p>
+      <form id="admin-login-form" novalidate>
+        <div class="field">
+          <label for="admin-username">Username</label>
+          <input class="input" id="admin-username" name="username" type="text" required autocomplete="username" autocapitalize="none" spellcheck="false" data-autofocus>
+          <p class="field-error" hidden>Enter the admin username.</p>
+        </div>
+        <div class="field">
+          <label for="admin-password">Password</label>
+          <div class="admin-password-field">
+            <input class="input" id="admin-password" name="password" type="password" required autocomplete="current-password" data-password-input>
+            <button class="btn btn--sm btn--ghost" type="button" data-password-toggle="admin-password" aria-label="Show password" aria-pressed="false">Show</button>
+          </div>
+          <p class="field-error" hidden>Enter your password.</p>
+        </div>
+        <p class="form-error" data-login-error hidden>Username or password is incorrect.</p>
+        <p class="form-error" data-admin-denied hidden>You are signed in as a customer. Sign in here with the admin username and password.</p>
+        <button class="btn btn--block" type="submit">Sign in to admin</button>
+      </form>
+      <p class="admin-login__link"><button class="link" type="button" data-show-forgot>Forgot password?</button></p>
+      <form id="admin-forgot-form" novalidate hidden>
+        <h2 class="h3">Reset your password</h2>
+        <p class="muted">Enter the email address configured for your admin account. We’ll send a one-time reset link if it matches.</p>
+        <div class="field">
+          <label for="admin-reset-email">Admin email</label>
+          <input class="input" id="admin-reset-email" name="email" type="email" required autocomplete="email">
+          <p class="field-error" hidden>Enter a valid email address.</p>
+        </div>
+        <p class="form-error" data-forgot-error hidden></p>
+        <p class="muted" data-forgot-success role="status" aria-live="polite" hidden></p>
+        <button class="btn btn--block" type="submit">Email reset link</button>
+        <button class="link admin-login__back" type="button" data-show-login>Back to sign in</button>
+      </form>
+      <form id="admin-reset-form" novalidate hidden>
+        <h2 class="h3">Choose a new password</h2>
+        <p class="muted">Your reset link is valid for 30 minutes and can only be used once.</p>
+        <input type="hidden" name="token">
+        <div class="field">
+          <label for="admin-new-password">New password</label>
+          <div class="admin-password-field">
+            <input class="input" id="admin-new-password" name="password" type="password" required minlength="8" autocomplete="new-password" data-password-input>
+            <button class="btn btn--sm btn--ghost" type="button" data-password-toggle="admin-new-password" aria-label="Show password" aria-pressed="false">Show</button>
+          </div>
+          <p class="field-error" hidden>Use at least 8 characters.</p>
+        </div>
+        <p class="form-error" data-reset-error hidden></p>
+        <p class="muted" data-reset-success role="status" aria-live="polite" hidden></p>
+        <button class="btn btn--block" type="submit">Change password</button>
+        <button class="link admin-login__back" type="button" data-show-login>Back to sign in</button>
+      </form>
+    </section>
+
+    <div class="account" data-admin hidden>
+      <div>
+        <div class="tabs" role="tablist" aria-label="Admin sections" aria-orientation="vertical">
+          <button type="button" role="tab" data-tab="orders" aria-selected="true">Orders</button>
+          <button type="button" role="tab" data-tab="products" aria-selected="false">Products &amp; stock</button>
+          <button type="button" role="tab" data-tab="customers" aria-selected="false">Customers</button>
+          <button type="button" role="tab" data-tab="activity" aria-selected="false">Sign-ups &amp; sign-ins</button>
+          <button type="button" role="tab" data-tab="promos" aria-selected="false">Promo codes</button>
+          <button type="button" role="tab" data-tab="reviews" aria-selected="false">Reviews</button>
+          <button type="button" role="tab" data-tab="newsletter" aria-selected="false">Newsletter</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="admin-stats" data-stats>
+          <div class="admin-stat"><b data-f="orders">0</b><span>Orders</span></div>
+          <div class="admin-stat"><b data-f="openOrders">0</b><span>To ship</span></div>
+          <div class="admin-stat"><b data-f="revenue">0</b><span>Revenue</span></div>
+          <div class="admin-stat"><b data-f="customers">0</b><span>Customers</span></div>
+          <div class="admin-stat"><b data-f="signinsToday">0</b><span>Sign-ups &amp; sign-ins (24 h)</span></div>
+          <div class="admin-stat"><b data-f="lowStock">0</b><span>Low stock (10 or less)</span></div>
+          <div class="admin-stat"><b data-f="subscribers">0</b><span>Subscribers</span></div>
+        </div>
+
+        <!-- ORDERS -->
+        <section id="tab-orders" role="tabpanel" aria-label="Orders">
+          <div class="admin-tools">
+            <div class="field">
+              <label for="order-filter">Show</label>
+              <select class="select" id="order-filter" data-order-filter>
+                <option value="">All orders</option>
+                <option value="placed">Confirmed</option>
+                <option value="packed">Packed</option>
+                <option value="shipped">Shipped</option>
+                <option value="delivered">Delivered</option>
+                <option value="cancelled">Cancelled</option>
+              </select>
+            </div>
+          </div>
+          <div class="admin-table-wrap">
+            <table class="admin-table">
+              <thead><tr><th>Order</th><th>Date</th><th>Customer</th><th>Items</th><th>Total</th><th>Delivery / payment</th><th>Status</th></tr></thead>
+              <tbody data-rows="tpl-admin-order"></tbody>
+            </table>
+          </div>
+          <p class="muted" data-empty hidden>No orders yet.</p>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section id="tab-products" role="tabpanel" aria-label="Products" hidden>
+          <p class="muted" data-gap-b>Price and stock are saved in MongoDB and show on the shop straight away. Names, photos and descriptions are edited in the HTML pages (then run <code>python seed.py</code>).</p>
+          <div class="admin-table-wrap">
+            <table class="admin-table">
+              <thead><tr><th></th><th>Product</th><th>Price</th><th>Was</th><th>Stock</th><th>Sold</th><th>On sale</th><th></th></tr></thead>
+              <tbody data-rows="tpl-admin-product"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- CUSTOMERS -->
+        <section id="tab-customers" role="tabpanel" aria-label="Customers" hidden>
+          <div class="admin-table-wrap">
+            <table class="admin-table">
+              <thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Signed up</th><th>Last sign-in</th><th>Sign-ins</th><th>Orders</th><th>Spent</th></tr></thead>
+              <tbody data-rows="tpl-admin-customer"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- SIGN-UPS & SIGN-INS (every one is saved in the login_events collection) -->
+        <section id="tab-activity" role="tabpanel" aria-label="Sign-ups and sign-ins" hidden>
+          <div class="admin-tools">
+            <div class="field">
+              <label for="activity-filter">Show</label>
+              <select class="select" id="activity-filter" data-activity-filter>
+                <option value="">Everything</option>
+                <option value="signup">Sign-ups</option>
+                <option value="signin">Sign-ins</option>
+                <option value="failed">Failed sign-ins</option>
+                <option value="admin-signin">Admin sign-ins</option>
+                <option value="admin-failed">Failed admin sign-ins</option>
+              </select>
+            </div>
+            <button class="btn btn--sm btn--ghost" type="button" data-activity-refresh>Refresh</button>
+          </div>
+          <div class="admin-table-wrap">
+            <table class="admin-table">
+              <thead><tr><th>Date &amp; time</th><th>Event</th><th>Name</th><th>Email / username</th><th>IP address</th><th>Device</th></tr></thead>
+              <tbody data-rows="tpl-admin-event"></tbody>
+            </table>
+          </div>
+          <p class="muted" data-empty hidden>No sign-ups or sign-ins yet.</p>
+        </section>
+
+        <!-- PROMO CODES -->
+        <section id="tab-promos" role="tabpanel" aria-label="Promo codes" hidden>
+          <form class="admin-tools" id="promo-form" novalidate>
+            <div class="field">
+              <label for="promo-code">New code</label>
+              <input class="input" id="promo-code" name="code" type="text" required pattern="[A-Za-z0-9]{3,20}" placeholder="DIWALI20">
+              <p class="field-error" hidden>Use 3 to 20 letters or numbers.</p>
+            </div>
+            <div class="field">
+              <label for="promo-percent">% off</label>
+              <input class="input" id="promo-percent" name="percent" type="number" required min="1" max="90" pattern="[0-9]{1,2}">
+              <p class="field-error" hidden>Enter 1 to 90.</p>
+            </div>
+            <button class="btn btn--sm" type="submit">Add code</button>
+          </form>
+          <div class="admin-table-wrap">
+            <table class="admin-table">
+              <thead><tr><th>Code</th><th>% off</th><th>Times used</th><th>Active</th></tr></thead>
+              <tbody data-rows="tpl-admin-promo"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- REVIEWS -->
+        <section id="tab-reviews" role="tabpanel" aria-label="Reviews" hidden>
+          <div class="admin-table-wrap">
+            <table class="admin-table">
+              <thead><tr><th>Date</th><th>Product</th><th>By</th><th>Rating</th><th>Review</th><th>Shown</th></tr></thead>
+              <tbody data-rows="tpl-admin-review"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section id="tab-newsletter" role="tabpanel" aria-label="Newsletter" hidden>
+          <div class="admin-table-wrap">
+            <table class="admin-table">
+              <thead><tr><th>Email</th><th>Signed up</th><th>Subscribed</th></tr></thead>
+              <tbody data-rows="tpl-admin-subscriber"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span data-toast="saved" hidden>Saved</span>
+    <span data-toast="fix-form" hidden>Please check the highlighted fields</span>
+    <span data-toast="offline" hidden>Could not reach the store. Please try again.</span>
+  </div>
+
+  <!-- Row templates -->
+  <template id="tpl-admin-order">
+    <tr>
+      <td><a class="link" data-f-href="href"><b data-f="id"></b></a></td>
+      <td data-f="date"></td>
+      <td><span data-f="name"></span><br><span class="muted" data-f="email"></span><br><span class="muted" data-f="phone"></span></td>
+      <td><span data-f="items"></span><br><span class="muted" data-f="address"></span></td>
+      <td><b data-f="total"></b></td>
+      <td><span data-f="delivery"></span><br><span class="muted" data-f="payment"></span></td>
+      <td>
+        <select class="select" data-order-status aria-label="Order status">
+          <option value="placed">Confirmed</option>
+          <option value="packed">Packed</option>
+          <option value="shipped">Shipped</option>
+          <option value="delivered">Delivered</option>
+          <option value="cancelled">Cancelled</option>
+        </select>
+      </td>
+    </tr>
+  </template>
+
+  <template id="tpl-admin-product">
+    <tr>
+      <td><img data-f-src="image" data-f-alt="name" alt="" width="44" height="44"></td>
+      <td><a class="link" data-f-href="href" data-f="name"></a><br><span class="muted" data-f="id"></span></td>
+      <td><input class="input" type="number" min="0" name="price" aria-label="Price"></td>
+      <td><input class="input" type="number" min="0" name="compareAt" aria-label="Was price"></td>
+      <td><input class="input" type="number" min="0" name="stockQty" aria-label="Stock"></td>
+      <td data-f="sold"></td>
+      <td><input type="checkbox" name="active" aria-label="On sale"></td>
+      <td><button class="btn btn--sm" type="button" data-save-product>Save</button></td>
+    </tr>
+  </template>
+
+  <template id="tpl-admin-customer">
+    <tr><td data-f="name"></td><td data-f="email"></td><td data-f="phone"></td><td data-f="joined"></td><td data-f="lastLogin"></td><td data-f="logins"></td><td data-f="orders"></td><td data-f="spent"></td></tr>
+  </template>
+
+  <template id="tpl-admin-event">
+    <tr><td data-f="date"></td><td><span class="event-tag" data-f="event"></span></td><td data-f="name"></td><td data-f="email"></td><td data-f="ip"></td><td class="muted" data-f="device"></td></tr>
+  </template>
+
+  <template id="tpl-admin-promo">
+    <tr><td><b data-f="code"></b></td><td data-f="percent"></td><td data-f="uses"></td><td><input type="checkbox" data-promo-active aria-label="Active"></td></tr>
+  </template>
+
+  <template id="tpl-admin-review">
+    <tr><td data-f="date"></td><td data-f="product"></td><td data-f="name"></td><td data-f="rating"></td><td><b data-f="title"></b><br><span data-f="body"></span></td><td><input type="checkbox" data-review-shown aria-label="Shown on the product page"></td></tr>
+  </template>
+
+  <template id="tpl-admin-subscriber">
+    <tr><td data-f="email"></td><td data-f="date"></td><td data-f="active"></td></tr>
+  </template>
+
+  <!-- Words used in the tables -->
+  <ul hidden data-words>
+    <li data-word="yes">Yes</li>
+    <li data-word="no">No</li>
+    <li data-word="never">Never</li>
+    <li data-word="signup">Signed up</li>
+    <li data-word="signin">Signed in</li>
+    <li data-word="failed">Failed sign-in</li>
+    <li data-word="admin-signin">Admin signed in</li>
+    <li data-word="admin-failed">Failed admin sign-in</li>
+  </ul>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/admin.js" defer></script>
+</body>
+</html>
